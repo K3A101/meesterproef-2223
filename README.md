@@ -3,14 +3,15 @@
 - Team Repo: https://github.com/RainbowJM/strandeiland
 
 ---
-## Inhoussopgave
+## Inhoudsopgave
 - [Meesterproef - Duurzaam, groen en sociaal Strandeiland](#meesterproef---duurzaam-groen-en-sociaal-strandeiland)
-  - [Inhoussopgave](#inhoussopgave)
+  - [Inhoudsopgave](#inhoudsopgave)
   - [Week 1: Debriefing en de eerste iteratie](#week-1-debriefing-en-de-eerste-iteratie)
   - [Voor de briefing](#voor-de-briefing)
     - [Mindmap](#mindmap)
   - [De briefing](#de-briefing)
 - [Ideegeneratie](#ideegeneratie)
+  - [Requirements lijst en brainstorm sessie](#requirements-lijst-en-brainstorm-sessie)
   - [Schetsen overzichtpagina's](#schetsen-overzichtpaginas)
   - [Visuele analyse](#visuele-analyse)
   - [Overzichtpagina eerste versie op Figma](#overzichtpagina-eerste-versie-op-figma)
@@ -57,6 +58,10 @@ Na de briefing met de opdrachtgever hebben we een debriefing geschreven met ze a
 
 ---
 # Ideegeneratie
+## Requirements lijst en brainstorm sessie
+
+
+
 ## Schetsen overzichtpagina's
 Voor deze week zijn we begonnen met de idee generatie van het concept. Ik heb als taak gekregen om aan de slag te gaan met de overzichtpagina. Ik heb op mijn tekentablet, een paar schetsen gemaakt van de overzichtpagina. Hieronder staat een aantal schetsen die ik heb gemaakt van de overzichtpagina.
 
@@ -106,7 +111,7 @@ Verder denk ik wel dat wij als groep goed samenwerken, en er is duidelijke commu
 ## Wat gaan we volgende week doen?
 - filter menu afmaken
 - wens maken button aanmaken
-- scetsen maken van de filter
+- schetsen maken van de filter
 - schetsen maken van ui stack
 - reflectie schrijven
 
