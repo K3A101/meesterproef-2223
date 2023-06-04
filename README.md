@@ -59,11 +59,19 @@ Na de briefing met de opdrachtgever hebben we een debriefing geschreven met ze a
 ---
 # Ideegeneratie
 ## Requirements lijst en brainstorm sessie
+![Brainstorming](./images/brainstorming.png)
 
-
+Hieronder zijn een aantal eisen die het product hebben:
+- Er is een overzichtpagina waar gebruiker een overzicht van all wensen kan zien.
+- Gebruikers kan filtreren op basis van populariteit, oudheid en thema.
+- Gebruikers moeten zelf een voorstel kunnen aanmaken met behulp van wens maken formulier.
+-  Het voorstel formulier opstellen op loclstorage
+-  Een real time chat waar gebruikers met elkaar kunnen praten.
 
 ## Schetsen overzichtpagina's
 Voor deze week zijn we begonnen met de idee generatie van het concept. Ik heb als taak gekregen om aan de slag te gaan met de overzichtpagina. Ik heb op mijn tekentablet, een paar schetsen gemaakt van de overzichtpagina. Hieronder staat een aantal schetsen die ik heb gemaakt van de overzichtpagina.
+
+![Schets van de overzichtpagina](images/overviewpage_sketc_page_1.jpg)
 
 ## Visuele analyse
 Verder heb ik gewerkt aan de visuele analyse van de brand boek die we hadden gekregen van de opdrachtever. De reden waarom ik een visuel analyse heb gemaakt is omdat wij als groep een beeld kan krijgen welke beeldelementen moet we gebruiken op het protptype. Op de visuele analyse staan de volgende onderdelen:
@@ -96,6 +104,7 @@ Daarna ben ik meteen begonnen  met de erste uitwerking van de overzichtpagina op
 We hebben ons eerste versie van de debrief gestuurd aan ons coach en de opdrachtgever. We hebben feedback gekegen die we hebben samen aangepast. Hier is de nieuwe versie van de debriefing:
 
 Hier is een lijst met de feedback:
+
 
 ## 2 juni 2023:  Feedback opdrachtgever iteratie 1 -
 
