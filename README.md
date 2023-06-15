@@ -28,17 +28,42 @@
   - [2 juni 2023:  Testen met opdrachtgever iteratie 1 -](#2-juni-2023--testen-met-opdrachtgever-iteratie-1--)
   - [Reflectie](#reflectie)
   - [Wat gaan we volgende week doen?](#wat-gaan-we-volgende-week-doen)
-  - [Week 2: Filter functionaliteit](#week-2-filter-functionaliteit)
+  - [Week 2: Filter functionaliteit, Code review en feedback](#week-2-filter-functionaliteit-code-review-en-feedback)
+    - [Wat ik heb gedaan deze week](#wat-ik-heb-gedaan-deze-week)
   - [Filter schetsen variaties](#filter-schetsen-variaties)
+    - [Themas](#themas)
+  - [Filter design op Figma](#filter-design-op-figma)
+  - [Filter component op code](#filter-component-op-code)
+  - [Code Opsplitsen in modules](#code-opsplitsen-in-modules)
+  - [Code review - 7 Juni 2023](#code-review---7-juni-2023)
+  - [Opdrachtegver feedback - 9 juni 2023](#opdrachtegver-feedback---9-juni-2023)
+- [Week 3: Nieuwe detailpagina design, chat, filter en feedback](#week-3-nieuwe-detailpagina-design-chat-filter-en-feedback)
+  - [Wat heb ik gedaan:](#wat-heb-ik-gedaan)
+    - [Uitegbereide filter functionaliteit](#uitegbereide-filter-functionaliteit)
+    - [Nieuwe detailpagina design](#nieuwe-detailpagina-design)
+    - [Nieuwe chat design](#nieuwe-chat-design)
+    - [Data fetchen op de overzichtpagina](#data-fetchen-op-de-overzichtpagina)
+    - [code snippets](#code-snippets)
+    - [Toegankelijkheid testjes](#toegankelijkheid-testjes)
+      - [Kleur contrast voor de kleurpallette](#kleur-contrast-voor-de-kleurpallette)
+    - [Code review](#code-review)
+    - [Opdrachtgever feedback](#opdrachtgever-feedback)
+    - [Design review](#design-review)
+- [Week 4:](#week-4)
 ---
 
 ## Week 1: Debriefing en de eerste iteratie
 Deze week begonnen we met een kick-off presentatie van het eindproject voor deze Minor. We kregen gedetailleerde informatie over het geplande schema voor de komende vijf weken. Verder hebben we een eerste iteratie aangewerkt van ons prototype. Voor deze week wilde we een eerste versie van de overzichtpagina, detailpagina maak een wens formulier. Ik ben aan de slag geweest met het uitwerken van de overzichtpagina. 
 
 ## Opdrachtomschrijving
-
+Het bedrijf CrossmarX wil een nieuwe functionaliteit toevoegen voor de hallostrandeiland.nl website waar IJburg bewoners nieuwe voorstellen kunnen insturen voor de nieuwe wijk van Strandeiland. Hiermee wordt de communicatie tussen toekomstige bewoners van Strandeiland en de projectleiders van de gemeente Amsterdam bevorderd. Het doel is om via Hallo Strandeiland goede ideeën en voorstellen te verzamelen, te verbeteren en de mooie en haalbare ideeën/voorstellen gerealiseerd te krijgen. 
 
 ## User stories
+> Als toekomstig bewoner, wil ik mijn voorstel voor een duurzamer, groener en socialer strandeiland kunnen delen, zodat dit onderzocht en hopelijk gerealiseerd kan worden.
+
+> Als toekomstig bewoner, wil ik een reactie kunnen geven op voorstellen van andere toekomstige bewoners, zodat we kunnen samenwerken aan het vormgeven van de voorstellen.
+
+> Als projectmanager van de gemeente, wil ik voorstellen van toekomstige bewoners kunnen filteren op thema's, zodat ik per thema kan bekijken of er ideeën bijzitten die kunnen bijdragen aan een lagere ecologische footprint, of betere sociale cohesie van de wijk.
 
 ## Voor de briefing
 Verder hadden we een eerste ontmoeting met Michel Vogler van CrossmarX. Voordat we de briefing kregen hebben we een mindmap gemaakt met alle informatie die we al hadden over het project. Deze mindmap vind je hieronder.
@@ -106,10 +131,12 @@ Dit is mijn eerste versie die ik op figma heb gemaakt. Ik heb eerste de navigati
 ![Figma versie 1](images/overzichtpagina-figma-1.png)
 
 ### Versie 2:
-In de tweede figma versie, heb ik andere layou stijl gemaakt. Bovenaan heb je een slideshow met populaire wensen. Maar de opdrachtgever gaf als feedback dat als je de populairste wensen bovenop zet worden ze populairder altijd on top en andere wensen worden in de achtergrond gebleven. Hij wil dat alle wensen 
+In de tweede figma versie, heb ik andere layou stijl gemaakt. Bovenaan heb je een slideshow met populaire wensen. Maar de opdrachtgever gaf als feedback dat als je de populairste wensen bovenop zet worden ze populairder altijd on top en andere wensen worden in de achtergrond gebleven. Hij wil dat alle wensen gelijke kansen krijgen. 
+
 ![Figma versie 2](images/overzichtpagina-figma-2.png)
 
 ## Overzichtpagina op code
+Na het ontwerpen op Figma, ben aan de slag gegaan met de code. Ik heb mijn eerste versie op een aparte branch gemaakt. Hieronder kun je de verschillende iteraties zien die ik heb gemaakt op de overzichtpagina. 
 
 ### Versie 1:
 ![overzicht pagina versie 1](images/overzicht-pagina-1.png)
@@ -179,8 +206,101 @@ Verder denk ik wel dat wij als groep goed samenwerken, en er is duidelijke commu
 - reflectie schrijven
 
 ---
-## Week 2: Filter functionaliteit
-In deze week hadden we een ons eerste standup met de coach. Hier besproken we wat we allemaal de vorige week hebben gedaan. Na de coach sessie hebben we een in ons groepje de taken verdeeld
+## Week 2: Filter functionaliteit, Code review en feedback 
+In deze week hadden we een ons eerste standup met de coach. Hier besproken we wat we allemaal de vorige week hebben gedaan. We hebben aan hem verteld wat voor week 2 gaat doen en hoe we moeten het aanpakkken. Verder hadden we deze week onze eerste individueel code review en uiteindelijk onze tweede iteratie presenteren aan de opdrachtgever.
 
+### Wat ik heb gedaan deze week
+- Design gemaakt voor de filter functieop Figma
+- Fouten fixen op wens aanmaken formulier
+- Filter bouwen met HTML, CSS en JavaScript
+- Code refactoren en schoonmaken
+  
 ## Filter schetsen variaties 
+Ten eerste heb ik opgezocht naar verschillende manieren waar het filter componenet gemaakt kan worden. Daarna heb ik de beste  ideeën op papier geschets. Ik probeerde veel variaties in te brengen om meer ideeen te generen. Voor de prototype willen een filter functionaliteit kan toevoegen zodat de gebruikers de wensen kan filteren op basis van de thema's en ook sorteren op meest recent, meest gedeeld, meeste trekkers en meeste helpers. WDe gekozen filter criterias worder onderaan terug te zien.
 
+![schetsen variaties van filteren](images/filters-schetsen.jpg)
+
+### Themas
+Voordat ik het filter functionaliteit kon implementeren in het prototype hebben we de thema's samen vastgesteld. Hironder kunnen jullie de thema's terugzien.
+
+![Themas](images/themas.png)
+
+## Filter design op Figma
+![filter designs op Figma](images/flter-figma.png)
+Wanneer ik een concrete idee, ben ik naar figma gegaan om een design te maken aan de filter functionaliteit. Ik maakte een design op Figma want dan is de overstap  van idee naar code makkelijker. 
+
+Op Figma heb ik een component gemaakt voor het filteren op thema's. Ik heb de component gemaakt voor mobiel en op grotere schermen. Voor kleiner schermen heeft filteren twee kolommen. Voor grote schermen heeft de filter drie kolommen. 
+
+Daarma hen ik twee variaties gemaakt. De eerste variatie hebben de filter items ook een checkbox die je kan aanvinken. De andere variatie heeft geen checkbox, hier moet je gewoon klikken. 
+Als je op een van de checkboxes klikt verandert de achtergrond van de filter items. Ik heb twee variaties, eentje is met een zwarte achtergrond en de andere is met een blauwe achtergrond. 
+
+## Filter component op code
+![filteren op basis thema](/images/filter-iteratie-1.png)
+![filteren op basis thema](/images/sort-filter.png)
+
+
+## Code Opsplitsen in modules
+Een van de feedbak van de code review die ik heb verwerkt is het refatoren van de code in Module. Ik was aan de gang gegaan met het refactoren. Wat ik heb gedaan heb ik bij de script tag de `type="module` gegeven. Met deze aanpassing activeer ik de mogelijkheid om mijn javascript code in modules te schrijven. Ten eerste heb ik een modules bestandmap gemaakt. In de module map heb ik per functie/componenten in een aparte javascript bestand geplaatst. Daarna exporteer ik z naar de hoofd javascript bestand met `export {...}` en in de `script.js` imorteer ze met `import`.
+
+
+## Code review - 7 Juni 2023
+Op  7 juni hebben we een individuele code review met docenten. Ik had code review gedaan bij robert. Ik heb geen nuttige feedback gekregen over mij code. Maar een ander Teamlid heeft heel veel nuttige feedback gekregen. Hier is een lijst van de feedback:
+- Branch per functionaliteiten maken
+- Issues aanmaken en linken in de projectboard
+- Github gebruiken om een to do lijst bij te houden 
+- Javascript en ejs templating opspliten en in modules herschrijving.
+
+
+
+
+## Opdrachtegver feedback - 9 juni 2023
+- Duidelijker maken dat de filter kun je uitklappen.
+- Treftwoord opzoeken. 
+- Nieuwe design voor detailpagina
+- Niuewe design voor de chat- meer functonaliteiten en de naam veranderen
+- Verschillende manieren om afbeeling in wens aan formulier te uploaden
+- Voorstel veranderen in wens
+- Trekkers menu anders doen en niet aan de zijkant
+- De wens aanmaken buton moet een activerend call to action hebben
+ 
+
+---
+# Week 3: Nieuwe detailpagina design, chat, filter en feedback
+Ik ben halverwege de meesterproef er zijn nog twee weken te gaan voor de expo. DEze week heb ik veel feedback gekregen van de opdrachtgever en tijdens de code en design review met Sanne en Joost. Verder heb ik verder gewerkt aan de filter functionaliteit, de nieuwe detailpagina en chat figma prototype. 
+## Wat heb ik gedaan:
+- De filter dropdown menu duidelijker maken dat het een dropdown menu is
+- Duidelijker maken wat of het filteren of sorteren is
+- De aanmaak wens button een activerende call to action geven
+- 
+
+### Uitegbereide filter functionaliteit
+
+
+### Nieuwe detailpagina design
+
+![detailpagina design](images/detailpagina-design.png)
+
+
+### Nieuwe chat design
+
+
+### Data fetchen op de overzichtpagina
+
+### code snippets
+
+
+### Toegankelijkheid testjes
+####  Kleur contrast voor de kleurpallette
+
+### Code review
+
+
+### Opdrachtgever feedback
+
+
+### Design review
+- Een pakkende banner afbeelding die meer context geeft.
+- Meer spelen met het layout van de overzichtpagina's
+
+--- 
+# Week 4:
