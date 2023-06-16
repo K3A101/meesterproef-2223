@@ -56,7 +56,7 @@
     - [Design review - 15 Juni 2023](#design-review---15-juni-2023)
   - [Nieuwe kleurpallette](#nieuwe-kleurpallette)
   - [Nieuwe overzichtpagina Design op Figma](#nieuwe-overzichtpagina-design-op-figma)
-    - [Nieuwe thumbnails designg](#nieuwe-thumbnails-designg)
+    - [Nieuwe thumbnails design](#nieuwe-thumbnails-design)
     - [Wat ga ik voor volgende week doen?](#wat-ga-ik-voor-volgende-week-doen)
 - [Week 4:](#week-4)
 ---
@@ -622,13 +622,27 @@ Bij het formulier pagina moet er op hierachie gelet worden welke componenten hor
 
 
 ## Nieuwe kleurpallette 
+Na de design review hebben we veel opmerkingen gekregen dat website heel saai is en lijkt als een standaard nieuwswebsite. We hebben daardoor als tip gekregen om de kleurpalette uit breiden met meer kleurtinten zoals we meer ruimte krijgen om de te spelen met de kleuren.  
+![Kleurpallette](images/nieuwe-kleurpalette.png)
 
 ## Nieuwe overzichtpagina Design op Figma
 
-### Nieuwe thumbnails designg
+![Nieuwe overzichtpagina](images/nieuwe-overzichtpagina-design.png)
 
+![Nieuwe overzichtpagina](images/overzicht-pagina-iteratie-4.png)
+
+
+### Nieuwe thumbnails design
+![Nieuwe thumbnails](images/thumbnail-iteraties-1.png)
+
+![Nieuwe thumbnails](images/thumbnail-iteraties-2.png)
 
 
 ### Wat ga ik voor volgende week doen?
+- De nieuwe kleurpallette implementeren in de  wens overzichtpagina 
+- De nieuwe layout van de overzichtpagina  in code verwerken.
+- De themas toevoegen per wens
+- Data filtreren op de overzichtpagina
+- Meer microinteracties toevoegen in de wens overzichtpagina
 --- 
 # Week 4:
