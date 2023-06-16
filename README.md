@@ -40,15 +40,24 @@
 - [Week 3: Nieuwe detailpagina design, chat, filter en feedback](#week-3-nieuwe-detailpagina-design-chat-filter-en-feedback)
   - [Wat heb ik gedaan:](#wat-heb-ik-gedaan)
     - [Uitegbereide filter functionaliteit](#uitegbereide-filter-functionaliteit)
-    - [Nieuwe detailpagina design](#nieuwe-detailpagina-design)
-    - [Nieuwe chat design](#nieuwe-chat-design)
+  - [Nieuwe wens detailpagina design](#nieuwe-wens-detailpagina-design)
+  - [Nieuwe chat design](#nieuwe-chat-design)
     - [Data fetchen op de overzichtpagina](#data-fetchen-op-de-overzichtpagina)
-    - [code snippets](#code-snippets)
+    - [Code snippets](#code-snippets)
     - [Toegankelijkheid testjes](#toegankelijkheid-testjes)
-      - [Kleur contrast voor de kleurpallette](#kleur-contrast-voor-de-kleurpallette)
-    - [Code review](#code-review)
-    - [Opdrachtgever feedback](#opdrachtgever-feedback)
-    - [Design review](#design-review)
+    - [Kleur contrast voor de kleurpallette](#kleur-contrast-voor-de-kleurpallette)
+    - [Blauw en wit](#blauw-en-wit)
+    - [Pastel Blauw en zwart](#pastel-blauw-en-zwart)
+    - [Geel en Zwart](#geel-en-zwart)
+    - [Pastel geel en zwart](#pastel-geel-en-zwart)
+      - [Responsive](#responsive)
+    - [Code review - 14 Juni 2023](#code-review---14-juni-2023)
+    - [Opdrachtgever feedback - 15 Juni 2023](#opdrachtgever-feedback---15-juni-2023)
+    - [Design review - 15 Juni 2023](#design-review---15-juni-2023)
+  - [Nieuwe kleurpallette](#nieuwe-kleurpallette)
+  - [Nieuwe overzichtpagina Design op Figma](#nieuwe-overzichtpagina-design-op-figma)
+    - [Nieuwe thumbnails designg](#nieuwe-thumbnails-designg)
+    - [Wat ga ik voor volgende week doen?](#wat-ga-ik-voor-volgende-week-doen)
 - [Week 4:](#week-4)
 ---
 
@@ -147,6 +156,7 @@ Na het ontwerpen op Figma, ben aan de slag gegaan met de code. Ik heb mijn eerst
 ![overzichtpagina versie 2 op code](images/overzicht-pagina-iteratie-2.png)
 
 
+
 ---
 # Feedback week 1
 
@@ -238,10 +248,77 @@ Als je op een van de checkboxes klikt verandert de achtergrond van de filter ite
 ![filteren op basis thema](/images/filter-iteratie-1.png)
 ![filteren op basis thema](/images/sort-filter.png)
 
+<details>
+<summary><h2>Filter code</h2></summary>
+
+```html
+    <form>
+      <fieldset>
+        <button class="close-filter">Close filter</button>
+        <ul>
+          <li class="theme-btn" data-filter-target="#theme">
+            <span> <b>Filtreren op:</b></span>
+            <span>Thema <i class="fa-solid fa-angle-down"></i></span>
+          </li>
+          <li class="sort-btn" data-filter-target="#sorting">
+            <span>Sorteren op:</span>
+            <span>Meest recente <i class="fa-solid fa-angle-down"></i></span>
+          </li>
+          <li>
+            <span>Zoek op trefwoord</span>
+          <label for="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            <input type="text" name="search" id="search" placeholder="Zoek op treftwoord">
+          </label>
+          
+          </li>
+        </ul>
+
+        <section class="filter-content">
+          <article id="theme" data-filter-content>
+            <ul class="theme-filter-items"> 
+              <li><label><input type="checkbox" name="theme" value="sport"><span>Sport</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="recreatie"><span>Recreatie</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="verkeer"><span>Verkeer</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="Winkels"><span>Winkels</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="natuur"><span>Natuur</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="milieu"><span>Milieu</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="jeugd"><span>Jeugd</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="veiligheid"><span>Veiligheid</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="cultuur"><span>Cultuur</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="huisvesting"><span>Huisvesting</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="infrastructuur"><span>Infrastructuur</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="strand"><span>Strand</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="onderwijs"><span>Onderwijs</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="overig"><span>Overig</span></label></li>
+            </ul>
+            <button class="filter-theme-results-btn" type="submit">Toon resultaten</button>
+          </article>
+
+          <article id="sorting" data-filter-content>
+            <ul class="sorting-filter-items">
+              <li><label><input type="radio" name="sort" value="recent"><span>Meest Recente</span></label></li>
+              <li><label><input type="radio" name="sort" value="delers"><span>Meest gedeeld</span></label></li>
+              <li><label><input type="radio" name="sort" value="trekkers"><span>Meeste trekkers</span></label></li>
+              <li><label><input type="radio" name="sort" value="helpers"><span>Meeste helpers</span></label></li>
+            </ul>
+
+            <button class="filter-sort-results-btn" type="submit">Toon resultaten</button>
+          </article>
+        </section>
+        <p class="selected-filter-items">Hello</p>
+      </fieldset>
+      <a href="/form">Maak een wens!</a>
+    </form>
+
+```
+
+</details>
 
 ## Code Opsplitsen in modules
 Een van de feedbak van de code review die ik heb verwerkt is het refatoren van de code in Module. Ik was aan de gang gegaan met het refactoren. Wat ik heb gedaan heb ik bij de script tag de `type="module` gegeven. Met deze aanpassing activeer ik de mogelijkheid om mijn javascript code in modules te schrijven. Ten eerste heb ik een modules bestandmap gemaakt. In de module map heb ik per functie/componenten in een aparte javascript bestand geplaatst. Daarna exporteer ik z naar de hoofd javascript bestand met `export {...}` en in de `script.js` imorteer ze met `import`.
 
+![code opsplitsen in modules](images/code-refactoring.png)
 
 ## Code review - 7 Juni 2023
 Op  7 juni hebben we een individuele code review met docenten. Ik had code review gedaan bij robert. Ik heb geen nuttige feedback gekregen over mij code. Maar een ander Teamlid heeft heel veel nuttige feedback gekregen. Hier is een lijst van de feedback:
@@ -267,40 +344,291 @@ Op  7 juni hebben we een individuele code review met docenten. Ik had code revie
 ---
 # Week 3: Nieuwe detailpagina design, chat, filter en feedback
 Ik ben halverwege de meesterproef er zijn nog twee weken te gaan voor de expo. DEze week heb ik veel feedback gekregen van de opdrachtgever en tijdens de code en design review met Sanne en Joost. Verder heb ik verder gewerkt aan de filter functionaliteit, de nieuwe detailpagina en chat figma prototype. 
+
 ## Wat heb ik gedaan:
 - De filter dropdown menu duidelijker maken dat het een dropdown menu is
 - Duidelijker maken wat of het filteren of sorteren is
 - De aanmaak wens button een activerende call to action geven
-- 
+- Een nieuwe chatdesign gemaakt op Figma
+- Geholpen met het ontwerpen van de detailpagina  
+- Data vanuit supabase opgehaald en op de overzichtpagina weergeven
+- Nieuwe design voor de detailpagina
 
 ### Uitegbereide filter functionaliteit
+![filter iteratie 2](/images/filter-iteratie-2.png)
+
+Ik heb verder gewerkt aan de filter functionaliteit. Tijdens het gesprek van de opdrachtgever, heeft hij aangegeven dat interactie van de dropdownmenu duidelijker moet zijn.  Om de interactie wat duidelijker te maken heb ik een pijl icoon gebruikt van fontawesome. Ik heb fontawesome gebruikt omdat je kan makkelijk implementeren in code met een `<i>` element. 
+
+Verder heb ik meer context gegeven wat voor soort filter het is. Ik heb een label toegevoegd met de tekst "Filter op" en "Sorteren op".
+
+<details>
+<summary><h2>Filter code</h2></summary>
+
+```html
+    <form>
+      <fieldset>
+        <button class="close-filter">Close filter</button>
+        <ul>
+          <li class="theme-btn" data-filter-target="#theme">
+            <span> <b>Filtreren op:</b></span>
+            <span>Thema <i class="fa-solid fa-angle-down"></i></span>
+          </li>
+          <li class="sort-btn" data-filter-target="#sorting">
+            <span>Sorteren op:</span>
+            <span>Meest recente <i class="fa-solid fa-angle-down"></i></span>
+          </li>
+          <li>
+            <span>Zoek op trefwoord</span>
+          <label for="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            <input type="text" name="search" id="search" placeholder="Zoek op treftwoord">
+          </label>
+          
+          </li>
+        </ul>
+
+        <section class="filter-content">
+          <article id="theme" data-filter-content>
+            <ul class="theme-filter-items"> 
+              <li><label><input type="checkbox" name="theme" value="sport"><span>Sport</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="recreatie"><span>Recreatie</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="verkeer"><span>Verkeer</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="Winkels"><span>Winkels</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="natuur"><span>Natuur</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="milieu"><span>Milieu</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="jeugd"><span>Jeugd</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="veiligheid"><span>Veiligheid</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="cultuur"><span>Cultuur</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="huisvesting"><span>Huisvesting</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="infrastructuur"><span>Infrastructuur</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="strand"><span>Strand</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="onderwijs"><span>Onderwijs</span></label></li>
+              <li><label><input type="checkbox" name="theme" value="overig"><span>Overig</span></label></li>
+            </ul>
+            <button class="filter-theme-results-btn" type="submit">Toon resultaten</button>
+          </article>
+
+          <article id="sorting" data-filter-content>
+            <ul class="sorting-filter-items">
+              <li><label><input type="radio" name="sort" value="recent"><span>Meest Recente</span></label></li>
+              <li><label><input type="radio" name="sort" value="delers"><span>Meest gedeeld</span></label></li>
+              <li><label><input type="radio" name="sort" value="trekkers"><span>Meeste trekkers</span></label></li>
+              <li><label><input type="radio" name="sort" value="helpers"><span>Meeste helpers</span></label></li>
+            </ul>
+
+            <button class="filter-sort-results-btn" type="submit">Toon resultaten</button>
+          </article>
+        </section>
+        <p class="selected-filter-items">Hello</p>
+      </fieldset>
+      <a href="/form">Maak een wens!</a>
+    </form>
+
+```
+</details>
 
 
-### Nieuwe detailpagina design
 
-![detailpagina design](images/detailpagina-design.png)
+## Nieuwe wens detailpagina design
+Verder gingen we als groep aan de slag met herontwerpen van de detailpagina van een wens. We hebben een aantal iteraties gemaakt op Figma en uiteindelijk hebben we een design gekozen. Hilal ging het pagina uitwerken in code We hebben de hoogtepunten van een reacties verwijdert en in plaats daarvan de trekkers, helpers en delers wat meer ruimtes gegeven. Omdat de delers misschien te groot kan zijn hebben we besloten om de om alleen de profielfoto te laten zien, dan wordt het makkelijker om meer delers naast elkaar te laten zien. Als je de naam van de deler wilt zien kan je op de profielfoto klikken. Dan komt een kleine popup met de naam van de deler.
+
+We hebben hier ook een beetje gespeeld met de kleur. Aan de rechterkant hebben we  een achtergrondkleur toegevoegd om een beetje wat kleurrijk te maken tussean al de witte vlakken.
+
+Als laaste kreeg de Chat een herontwerp, want de opdrachtgever zag geen toegevoegde waarde in een chat dus we hebben de interface verandert die meer lijkt reactie functionaliteit. In het volgende onderdeel ga ik meer vertellen over de chat. 
+
+![detailpagina design](images/detailpagina-design-1.png)
 
 
-### Nieuwe chat design
 
+## Nieuwe chat design
+Zoals ik al zei, we wilden een chat implementeren in de detailpagina zodat mensen op wensen reageren. Maar de opdrachtgever zag geen toegevoegde waarde in een chat. Hij chat als whatsapp dus iets informeel. Daardoor hebben we de naam verandert naar reacties. Ook hebben we besloten om meer functionaliteit te implementeren:
+- Bekijken hoeveel reacties er zijn:
+- Reageren op een reactie
+- Reactie kunnen lijken
+- Bekijken wie online is
+- Kijken wie aan het typen is.
+- Datum wanneer het geplaatst is
+
+
+![chat design](images/chat-nieuwe-design-variaties.png)
+![chat design](images/nieuwe-chat-design.png)
+
+Met de nieuwe functionalieiten klinkt het meer formeel dan alleen een simpel chat.
 
 ### Data fetchen op de overzichtpagina
+Het volegnde stap was de dynamische content in de website te implementeren. In de laaste drie weken hebben we een alleen gewerkt met hardcoded en startische data om zich te focussen op de over de opmaak van de pagina.  
 
-### code snippets
+Om de data te halen gebruiken we supabase. Jevona heeft dan een API gemaakt met behulp van supabase. We hebben een paar endpoints gemaakt om de data te fetchen. 
 
+Hier is een datamodel die Jevona heeft gemaakt, hoe de structuur van de data eruit ziet.
+
+![datamodel](images/datamodel-database.png)
+
+Voor de wens overzichtpagina had ik de suggestion endpoint nodig om informatie van de wensen te weergeven. In de endpoint staat informatie zoals:
+- titel van de wens 
+- beschrijving van de wens
+- Aantal reageerders en trekkers
+- Datum wanneer het gemaakt is  
+- afbeelding van de wens
+
+![data fetchen](/images/thumbnail-met-data.png)
+
+In deze foto kun je zien, hoe de data wordt weergeven op de overzichtpagina. Ik moet het nog een beetje stylen, maar het is een begin. 
+
+### Code snippets
+Om de data te fetchen was het niet te moeilijk te doen. De data word server-side opgehaald. Wat ik heb gedaan is een tabel vanuit de supabase database halen en de data loopen in de template engine. 
+
+Dus de wens kaarten heb ik eenmalig gemaakt in een partial bestand. De data wordt gestuurd naar de partial bestand en daarin worden de data weergeven. 
+
+```js
+// app.js
+
+const { createClient } = require('@supabase/supabase-js');
+const supabase = createClient(
+    'https://yyufywjwwwmgfjmenluv.supabase.co',
+    `${process.env.SUPABASE_KEY}`);
+
+
+    
+app.get("/",  async (req, res) => {
+  const { data: themeData, themeError } = await supabase
+    .from('theme')
+    .select()
+
+  const { data: suggestionsData, error: suggestionsError } = await supabase
+    .from('suggestion')
+    .select()
+  console.log(suggestionsData)
+
+  res.render("index", {
+    title: "Wensen",
+    themes: themeData,
+    suggestions: suggestionsData
+  });
+});
+```
+Wat ik deed was de tabel selecteren met de supabase client met `.from`. Daarna  heb ik de data gestuurd naar de template engine als een object. 
+
+
+```html
+<!-- index.ejs -->
+
+<div class="grid-container">
+  <% suggestions.forEach(suggestion => { %>
+    <%-include('./partials/thumbnail.ejs',{suggestionData: suggestion})%>
+  <% }) %>
+
+</div>
+```
+
+```html
+<!-- /partials/thumbnail.ejs -->
+<section class="thumbnail-container">
+    <figure>
+        <h2>hey</h2>
+        <div class="image-container">
+
+            <img src="<%= suggestionData.image%> " alt="Vanuit het natuur">
+        </div>
+        <figcaption>
+            <%= suggestionData.thema%>
+        </figcaption>
+    </figure>
+
+
+
+    <a href="/detailpage-1">
+
+        <article>
+
+            <ul class="user-info">
+                <li>Pieter van der baas</li>
+                <li>
+                    <%= suggestionData.created_at %>
+                </li>
+            </ul>
+
+            <h2>
+                <%= suggestionData.title %>
+            </h2>
+            <p>
+                <%= suggestionData.description %>
+            </p>
+
+            <ul class="statistics">
+                <li><span>Reaction:</span>
+                    <%= suggestionData.reaction %>
+                </li>
+                <li> <span> Delers:</span>
+                    <%= suggestionData.amount_vote%>
+                </li>
+            </ul>
+        </article>
+    </a>
+
+</section>
+
+```
 
 ### Toegankelijkheid testjes
-####  Kleur contrast voor de kleurpallette
+Ik heb af en toe een paar toegankelijkheid testen gedaan om het prototype toegankelijker te maken. Omdat het doelgroep voor dit website heel groot is moeten we ervoor zorgen dat de website toegankelijk zijn voor iedereen. 
 
-### Code review
+Ik heb daardoor een aantal testen gedaan om te kijken of de kleurcontrasten tussen de tekt en de achtergrond goed zijn. Ook heb ik gekeken  hoe de website te bedienen is op mobiel.
+
+###  Kleur contrast voor de kleurpallette
+
+### Blauw en wit
+Ik heb hier de blauwe kleur van de kleurpallette met de wit getest. De contrast ratio is 3.1:1. Dit is niet genoeg voor kleine teksten maar wel voor grote teksten zoals titels en subtitels.
+![kleurcontrast](images/kluercontrast-blauw-wit.png)
 
 
-### Opdrachtgever feedback
+### Pastel Blauw en zwart
+Hier heb ik de pastel blauwe kleur van de kleurpallette met de zwarte kleur getest. De contrast ratio is 14.3:1. Dit is genoeg voor kleine teksten en grote teksten.
+
+![kleurcontrast](images/kluercontrast-licht-blauw-zwart.png)
+
+### Geel en Zwart
+Hier heb ik de felle gele kleur van de kleurpallette met de zwarte kleur getest. De contrast ratio is 16.7:1. Dit is genoeg voor kleine teksten en grote teksten.
+![kleurcontrast](images/kleurcontrast-geel-zwart.png)
+
+### Pastel geel en zwart
+Hier heb ik de pastel gele kleur van de kleurpallette met de zwarte kleur getest. De contrast ratio is 16.3:1. Dit is genoeg voor kleine teksten en grote teksten.
+
+![Kleurcontrast](images/contrast-checker.png)
+
+#### Responsive 
+
+### Code review - 14 Juni 2023
+- De code is goed gestructureerd en overzichtelijk.
+- De app.js beter gaan opschonen en splitsen in meerdere bestanden
 
 
-### Design review
+### Opdrachtgever feedback - 15 Juni 2023
+Een paar feedback punten vanuit de opdrachtgever zijn:
+- Op de overzichtspagina de volgorde van sorteren en filtreren aanpassen 
+- Online weergaven op het bericht, is het iedereen die online is op de community pagina of zijn alleen gebruikers die op dit moment op de pagina bevinden. 
+- Groene cirkel (wanneer de gebruiker online is) is niet duidelijk genoeg
+- Een paar feedback punten die we van de docenten hebben gekregen
+Bij het formulier pagina moet er op hierachie gelet worden welke componenten horen bij elkaar
+-  Ook bij het formulier pagina kan de sectie van afbeelding naar een pop up verandert worden.
+- De hierarchie van de overzichtspagina letten
+- Een pakkende afbeelding voor de banner op de overzichtspagina veranderen 
+
+
+### Design review - 15 Juni 2023
 - Een pakkende banner afbeelding die meer context geeft.
 - Meer spelen met het layout van de overzichtpagina's
+- Meer kleur tintne toevoegen aan de kleurpalette
 
+
+## Nieuwe kleurpallette 
+
+## Nieuwe overzichtpagina Design op Figma
+
+### Nieuwe thumbnails designg
+
+
+
+### Wat ga ik voor volgende week doen?
 --- 
 # Week 4:
