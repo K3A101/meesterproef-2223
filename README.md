@@ -62,26 +62,46 @@
 - [Week 4:](#week-4)
     - [Wat heb ik deze week gedaan?](#wat-heb-ik-deze-week-gedaan)
   - [Iteratie 4 - Nieuwe herontwerp voor de overzichtpagina](#iteratie-4---nieuwe-herontwerp-voor-de-overzichtpagina)
-  - [Thumbnails](#thumbnails)
-  - [Ronde hoeken](#ronde-hoeken)
-  - [Thumbnail hover state](#thumbnail-hover-state)
+  - [Slogan](#slogan)
+    - [Versie 1 - van de slogan](#versie-1---van-de-slogan)
+    - [Versie 2 - van de slogan](#versie-2---van-de-slogan)
+  - [Thumbnails in code herontwerp](#thumbnails-in-code-herontwerp)
+    - [Ronde hoeken](#ronde-hoeken)
+    - [Thumbnail hover state](#thumbnail-hover-state)
+    - [Iconen van trekkers, delers en helpers in plaats van tekst](#iconen-van-trekkers-delers-en-helpers-in-plaats-van-tekst)
   - [Data ophalen vanuit de database en eromheen stijlen](#data-ophalen-vanuit-de-database-en-eromheen-stijlen)
   - [Thema per wens](#thema-per-wens)
   - [Aantal resultaten zien](#aantal-resultaten-zien)
   - [Laast gemaakte wensen met de data daarbij](#laast-gemaakte-wensen-met-de-data-daarbij)
-  - [Slogan](#slogan)
-    - [Responsiveness](#responsiveness)
+  - [Responsive design](#responsive-design)
+    - [Op mobiel](#op-mobiel)
+    - [Op tablet](#op-tablet)
+    - [Op desktop](#op-desktop)
   - [Microinteracties](#microinteracties)
+    - [Hover state animaties](#hover-state-animaties)
+    - [Wens aan maken button](#wens-aan-maken-button)
+    - [Wens aan maken button](#wens-aan-maken-button-1)
   - [Filter met selectmenu](#filter-met-selectmenu)
+    - [Hoe heb ik de selectmenu gebruikt?](#hoe-heb-ik-de-selectmenu-gebruikt)
+  - [Loading met CSS](#loading-met-css)
     - [Kleine styling fixen bij de user pagina](#kleine-styling-fixen-bij-de-user-pagina)
     - [Code review - 21 Juni 2023 met Joost](#code-review---21-juni-2023-met-joost)
     - [Design review - 22 Juni 2023 met Vasilis](#design-review---22-juni-2023-met-vasilis)
     - [Opdrachtgever feedback - 23 Juni 2023](#opdrachtgever-feedback---23-juni-2023)
     - [Kleine css fix](#kleine-css-fix)
+- [Week 5: De laaste loodjes](#week-5-de-laaste-loodjes)
+  - [Performance test](#performance-test)
+  - [Lazy loading bij afbeeldingen](#lazy-loading-bij-afbeeldingen)
     - [Visualistatie van de thema's](#visualistatie-van-de-themas)
     - [Gesorteerde thema's](#gesorteerde-themas)
-    - [Call to action](#call-to-action)
+- [Reflectie](#reflectie-1)
+  - [Wat heb ik geleerd?](#wat-heb-ik-geleerd)
+  - [Wat ging er goed?](#wat-ging-er-goed)
+  - [Wat ging er minder goed?](#wat-ging-er-minder-goed)
+  - [Wat ben ik trots op?](#wat-ben-ik-trots-op)
+  - [Vakken](#vakken)
   - [Wishlist](#wishlist)
+- [Bronnen](#bronnen)
 ---
 
 ## Week 1: Debriefing en de eerste iteratie
@@ -689,13 +709,22 @@ Deze week is de vierde week van de meesterproef. Deze week heb ik verschillende 
 
 
 ## Iteratie 4 - Nieuwe herontwerp voor de overzichtpagina
-Na de design review heb ik feedback gekregen om de pagina wat aantrekkelijker te maken. Ten eerste wanneer je op de pagina komt, zie je een afbeelding en de slogan. Maar het geef geen context wat de webpagina is. Verder de wens onderdeel paste niet echt bij de rest van de pagina. Het was helemaal saai. Hieronder ga ik uitleggen hoe ik de feedback heb verwerkt. 
+Na de design review heb ik feedback gekregen om de pagina wat aantrekkelijker te maken. Ten eerste wanneer je op de pagina komt, zie je een afbeelding en de slogan. Maar het geef geen context wat de webpagina is. Het moet duidelijk zijn dat de gebruiker op de wensen pagina is gekomen.  In de eerste versie heb ik alleen de slogan `Draag bij aan Strandeiland,  Jouw ideen ons toekomst` toegevoegd met een afbeelding die ik vanuit de huidige hallo Strandeiland heb geleend. Maar het was niet duidelijk genoeg. Daarom heb ik een nieuwe versie gemaakt met een korte uitleg wat de webpagina is.
 
-## Thumbnails
+## Slogan
+### Versie 1 - van de slogan 
+![Figma versie 1](images/overzichtpagina-figma-1.png)
+De bovenste onderdeel bestaat een hero afbeelding  een een slogan. De bedoeling was om de gebruiker context te geven op  wat de webpagina is.Dus mensen moet kunnen weten dat hier kan je wensen die andere mensen hebben voor de ontwikkeling van Strandeiland.  In de eerste versie was het niet helemaal duidelijk wat de doel van de pagina was. Daarom heb ik een tweede versie gemaakt.
+
+### Versie 2 - van de slogan
+![slogan](images/slogan-onderdeel-v2.png)
+In de tweede versie hebben ik een aantal dingen toegevoegd. Tne eerste heb ik een button gemaakt die de gebruiker stuurt waar een wens gemaakt kan worden. Ik heb een kopje toegeveogd die zegt `Wensen voor Strandeiland` om meer duidelijkheid te geven aan de gebruiker. En als laatste heb ik de juiste afmetingen gebruikt om de slogan hetzelfe margin krijgen zoals de algemene inhoud van de pagina. 
+
+## Thumbnails in code herontwerp
 
 ![Nieuwe thumbnails](images/overzicht-pagina-3.png)
 
-## Ronde hoeken
+### Ronde hoeken
 Ten eerste heb ik de thumbnails ronde hoeken gegeven met` border-radius: 2em.` WIj wilde zeg maar de wens thumbnails een beetje laten lijken op een kaartje. Dus ik heb een `<article>` element met daarin de wens titel, de thema en kleine beschrijving van de wens. De article element heb ik ook een ronde hoek gegeven en met `transform translateY` heb ik de  element een beetje naar boven verplaatst zodat het op de afbeelding komt te staan.
 
 Voor de afbeelding heb ik omgeringd met een `<figure>` element met een afmeting zodat alle afbeelding dezelfde afmetingen krijgen.  
@@ -723,7 +752,7 @@ Voor de afbeelding heb ik omgeringd met een `<figure>` element met een afmeting 
 }
 ```
 
-## Thumbnail hover state
+### Thumbnail hover state
 ![Nieuwe thumbnails](images/overzicht-pagina-3.png)
 
 Wanneer je met je muis over de thumbnail gaat, zie je dat de article element een beetje naar boven gaat. Dit heb ik gedaan met `transform: translateY(-38%);` en `transition: transform .5s ease-in-out;`.
@@ -748,6 +777,32 @@ Om het paragraaf een beetje te laten vervagen heb ik een ::before psuedo selecto
 }
 
 ```
+### Iconen van trekkers, delers en helpers in plaats van tekst
+In de vorige versie van de oberzichtpagina had ik alleen Stemmers en trekkers als tekst toegevoegd. Op de huidige  website van Hallo Strandeiland heb je verschillende rollen zoals trekkers, delers en helpers. Trekkers zijn mensen die ambassadeur zijn van een wens, helpers zijn mensen die graag willen helpen met het realiseren van een wens en delers zijn mensen die de wens willen delen.
+
+In de oude versie van de overzichtpagina had ik alleen stemmers en trekkers met de waarde  toegevoegd. Want voor de gemeente Amsterdam kunnen ze bekijken aan de hand van de aantal trekkers en helpers hoe realiseerbaar de wens is. 
+![Oude thumbnails](images/overzicht-pagina-2.png)
+
+
+In de nieuwe versie heb ik ook de delers gezet. Want we vonden dat het ook belangrijk is om te weten hoeveel mensen de wens willen delen. Dus ik die ook toegevoegd. Maar een nadeel was dat de tekst veel ruimte neemt en niet genoeg waren om drie woorden naast elkaar te zetten. Dus ik heb de tekst vervangen met iconen. De eesrte icoon is gemaakt door Ine, en ik vroeg aan haar of ik de icoon mocht gebruiken. Ze vond het goed en ik heb de icoon gebruikt dus credits naar Ine. De andere iconen zijn van fontawesome.
+
+Hoe ik heb het gedaan?
+Ik heb een script toegevoegd bij de head van de html pagina. Dit script zorgt ervoor dat de iconen worden geladen. 
+
+```html
+<script src="https://kit.fontawesome.com/87a1015511.js" crossorigin="anonymous"></script>
+```
+Daarna ze ik de iconen in de html pagina. Ik heb een `<i>` element gebruikt met daarin de iconen. 
+```html
+    <ul class="statistics">
+                <li>  <img src="../../images/trekkers.svg" alt=""> <span>5</span></li>
+                <li><i class="fa-regular fa-handshake fa-lg" style="color: #000000;"></i> <span>2</span></li>
+                <li><i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i><span><%= suggestion.amount_vote%></span></li>
+            </ul>
+```
+
+![Nieuwe thumbnails](images/overzicht-pagina-3.png)
+
 
 ## Data ophalen vanuit de database en eromheen stijlen
 Vorige week heb ik al de data vanuit de database opgehaald maar het was nog niet compleet. Er miste nog de thema die bij de wens hoort. Dus ik heb de thema ook toegevoegd. Dus de data dat dynamsich zij:
@@ -887,32 +942,210 @@ Zodat ik de rest van de wensen niet verpest. Daarna in de server heb ik een nieu
 
 
 
-## Slogan
-Deze onderdeel vindt 
-![slogan](images/slogan-onderdeel-v2.png)
-- Wens aanmaken button verplaatst
-- slogan beter uitgelijnd met de rest van de content
 
-### Responsiveness
-- Op mobiel 
-- Op tablet
-- Op desktop
+## Responsive design 
+Ik heb ook rekening gehouden dat de website voor alle apparaten zo goed mogelijk moet kunnen werken. Dus ik heb met css gezorgt dat de webpagina responsive wordt voor de verschillende apparaten. Om de website responsive te maken heb ik gebruikt gemaakt van `media queries`. Dus  bij de wensen overzicht begin je met vier kolommen en daarna wordt het twee kolommen en daarna wordt het een kolom. 
+
+
+
+### Op mobiel
+![Op mobiel](images/een-kolommen-responsive.png)
+### Op tablet
+![Op tablet](images/twee-kolommen-responsive.png)
+### Op desktop
+![Op desktop](images/overzicht-pagina-3.png)
+
+Hieronder zie je de code van de media queries.
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(24em, auto);
+  gap: 1.25em;
+  max-width: 75em;
+  margin: 20px auto;
+}
+
+@media (max-width: 60em) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 55em) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 3;
+  }
+}
+
+
+@media (max-width: 40em) {
+  .slogan-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-column: span 3;
+  }
+}
+
+```
 
 
 ## Microinteracties
-De hover state op de skogav.
-dropdown menu 
+Na de design review met Sanne en Vasilis, kregen we als opmerking dat de website meer animaties nodig heeft. Het bleef een beetje statisch. Dus we hebben besloten om microinteracties toe te voegen aan de website.
+- Springende slogan animaties
+- De wens aanmak button een beetje laten draaien wanneer je de muis  zweeft. 
+- Wannneer je de muis zweeft op de wens thumbnails dan gaat de tekst onderdeel een beetje omhoog.
+Hieronder zie je de microinteracties die ik heb toegevoegd aan de website.
+- Wanneer je de filter dropdown menu opent zie je een soepele transitie met fade-in en fade-out
+
+### Hover state animaties
+### Wens aan maken button
+![button microinteratie](images/microinteractie-btn.png)
+Hier is een voorbeeld  van de microinteraties die je krijgt wannneer je op de knop klikt om de wens te gaan maken. De knop gaat een beetje draaien en de achtergrond kleur verandert naar blauw. 
+
+```css
+
+.slogan-call-to-action a {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background-color: var(--black);
+  color: var(--white);
+  transition: all .5s ease-in-out;
+}
+
+.slogan-call-to-action a:hover {
+  transform: rotate(-5deg);
+  background-color: var(--blue);
+}
+
+@keyframes slogan-1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes slogan-2 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-8deg);
+  }
+}
+
+```
+
+### Wens aan maken button
+De volgende microinteractie is wanneer je de muis zweeft op de wens thumbnails. De tekst onderdeel gaat een beetje omhoog.
+
+![thumbnail microinteratie](images/thumbnail-hover.png)
 
 
 ## Filter met selectmenu
 ![Filter](/images/selectmenu.png)
-- Sorteer verplaatst
-- 
+Voor de filtere heb ik een beetje geëxperimenteerd met de selectmenu. Want wanneer je op bepaalde plek bent op de pagina dan kan je de vakje niet volledig zien.  Dus ik heb experimentele functie aangezet in de chrome zodat ik `<selectmenu>` kan gebruiken.
 
+Selectmenu is een alternatief van de `<select>` tag. Het is een native html element. Het is een soort van dropdown menu. Het enige verschil is dat je met de `<selectmenu>` met css kan stijlen en niet met de `<select>` tag.
+
+Ik heb de selectmenu gebruikt bij het sorteren. Het voordeel van dit is dat de dropdown menu wordt aangepast aan de hand van waar je bent op de pagina.
+
+### Hoe heb ik de selectmenu gebruikt?
+Wat ik heb gedaan om selectemenu is experimentele functionele aangezet in de chrome. Dit kan je doen door naar `chrome://flags/` te gaan en dan kan je de experimentele functies aanzetten.
+
+
+```html
+<selectmenu name="sort" id="sort" class="select-menu-sorting">
+    <option value="recent">Meest recent</option>
+    <option value="delers">Meest gedeeld</option>
+    <option value="trekkers">Meeste trekkers</option>
+    <option value="helpers">Meeste helpers</option>
+</selectmenu>
+
+```
+
+```css
+.select-menu-sorting::part(button) {
+  padding: .9em;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+.select-menu-sorting::part(selected-value) {
+  font-size: 1.2em;
+
+}
+
+.select-menu-sorting::part(listbox) {
+  box-shadow: none;
+  width: 30em;
+  height: auto;
+  padding: .5em 1em;
+  animation: smooth-dropdown 0.3s ease-in-out both alternate;
+}
+
+.select-menu-sorting option {
+  padding: .9em;
+  margin: .5em 0;
+  font-size: 1.2em;
+  border: none;
+  background-color: var(--light-grey);
+  color: var(--black);
+}
+
+.select-menu-sorting option:hover {
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+
+```
+
+
+## Loading met CSS
+Ik was bezig met de overzichtpagina toen, wanneer een wens zonder afbeeldingen was geplaatst en de hele layout was verplaatst. Dus ik dacht om de afbeelding container een vaste hoogte gegeven en een achtergrond kleuren. Dus wanneer de foto heel traag laad dan zie je een achtergrond kleur. 
+
+Ik heb verschillende kleuren geprobeerd, maar we hebben besloten om de gele te gebruiken. 
+![error state 1](images/error-state-blue-background.png)
+
+![error state 2](/images/error-state-pastel-yellow-background.png)
+![error state 3](images/error-state-yellow-background.png)
+
+```css
+.thumbnail-container {
+  background-color: var(--white);
+  border-radius: var(--border-radius-medium);
+}
+
+.thumbnail-container img {
+  width: 100%;
+  border-radius: var(--border-radius-medium);
+}
+
+.thumbnail-container figure {
+  position: relative;
+  height: 15.625em;
+  background-color: var(--yellow);
+  border-radius: var(--border-radius-medium);
+}
+```
 ### Kleine styling fixen bij de user pagina
 
 
-### Code review - 21 Juni 2023 met Joost
+### Code review - 21 Juni 2023 met Joost 
 - De code is goed gestructureerd en overzichtelijk.
 - Goede bestand benamingen 
 - Console.log weghalen
@@ -944,21 +1177,89 @@ We hebben nog meer feedback gekregen vanuit de opdrachtgever. Hieronder zie je d
 in de oproep daarboven. Helpt mee om strandeiland zo duurzaam mogelijk te maken?
 bij form u en uw veranderen naar jij en jouw
 
-
 ### Kleine css fix
 - Wanneer er geen afbeelding wordt achtergrond kleur gegeven
 - De offline error bericht centreren
 - De foto's van de userpagina beter  stijlen
+
+---
+
+# Week 5: De laaste loodjes 
+
+## Performance test
+
+## Lazy loading bij afbeeldingen
 
 ### Visualistatie van de thema's
 
 
 ### Gesorteerde thema's
 
+--- 
+# Reflectie
+Ten slotte is er een einde gekomen van de meesterproef. Het was vijf leerzame weken waar we de vakken kunnen toepassen op de eindopdracht. Ik heb uiteindelijk veel geleerd maar ik denk nog steeds dat ik meer kon doen. 
 
-### Call to action
+Voor verfrssing ga ik weer een korte samenvatiting over wat ik de laatste vijf weken heb gedaan. De opdracht die ik eraan heb gewerkt is Strandeiland. 
+
+We moesten een functionaliteit maken waar toekomstige bewoners van Strandeiland een wens kunnen plaatsen. We hebben verschillende functionaliteiten gemaakt zoals een overzichtspagina met alle wensen, een detailpagina van elk wens, een manier om op de wens te reageren. Ik heb de laatste vijf weken aan de overzichtspagina gewerkt. 
+
+## Wat heb ik geleerd?
+Het meest belangrijk dat ik heb geleerd was hoe ik aan een frontend project werkt met een team. Werken met Git en version control maakt het wat lastiger, vooral met de merge conflicten. Maar door onze duidelijke communicatie en goede afspraken hebben we een goede workflow kunnen creëren. Hiermee heb ik geleerd hoe je merge conflicten kan oplossen, isssues maken en koppelen aan branches en pull requests.
+
+Verder heb ik gewerkt met supabase om data op te halen. Hiervoor moet je kijken hoe je de data is gestructureerd met insomia en uiteindelijk in de applicatie implementeren. 
+
+## Wat ging er goed?
+Ten eerste vind ik ons samenwerking heel goe gegaan. Wij hebben elke zo goed gecommuniceerd en afspraken gemaakt. We houden ook tussen door een dagelijkse standup waar wij vertellen hoe het ging en wat hebben gedaan en hoe we verder gaan. Daarna worden de taken verdeeld  en gaan we aan de slag. Dit hele proces werd bijgehouden in ons daily scrum document. 
+
+Wij hebben goede code agreemenst vastesteld zodat we consistent code schrijven. Dit hebben we gedaan door een code review te doen. Hierbij hebben we elkaars code bekeken en feedback gegeven. Onze coding agreements zijn te vinden in de wiki van onze  groep github repository.
+
+
+Wat er goed ging bij mij was dat ik ietaratief hebt gewerkt aan de overzichtspagina. Je ziet duidelijk dat ik feedback heb verwerkt en een nieuwe variant hebt gemaakt. Ik ben ook blij dat ik ook een beetje kon experimenteren met css zoals animaties, de selectmenu en Grid. Ik had veel moeite met css grid maar ik heb het nu een beetje onder de knie. Ik had ook de kans om mezelf te verdiepen om code te schrijven in de server side, want ik probeerde in het begin alles te maken in de client side.
+
+## Wat ging er minder goed?
+Wat minder goed ging voor mij was dat ik vast zit met het implenteren van een filter functionaliteit om de data van de database te filteren. Ik had de css opmaak en alles maar om het echt te laten werken was een uitdaging. Ik wist precies welke code ik moest schrijven, en ik wilde ook geen hulp en liep wekenlang vast. Toen mij dat niet lukte kreeg het gevoel dat ik veel heb nog om te leren en dat ik niet genoeg heb gedaan.Maar in het algemeen ben ik wel tevreden met wat ik heb gedaan.
+
+## Wat ben ik trots op?
+## Vakken
+- web app from scratch
+- ccs to the rescue
+- Browser tech
+- pwa
+- hcd
 
 ## Wishlist
 | Prioriteit | User story | Beschrijving | Status |
 | :--- | :--- | :--- | :--- |
 | 1 |  |  |  |
+
+
+---
+# Bronnen
+- How do I fetch Multiple Specific Rows in Supabase JS? (n.d.). Stack Overflow. https://stackoverflow.com/questions/75717077/how-do-i-fetch-multiple-specific-rows-in-supabase-js
+- How to get “COUNT(*)” in Supabase. (n.d.). Stack Overflow. https://stackoverflow.com/questions/65612167/how-to-get-count-in-supabase
+- Vanilla JavaScript search - how to show results only when button is clicked? (n.d.). Stack Overflow. https://stackoverflow.com/questions/69117827/vanilla-javascript-search-how-to-show-results-only-when-button-is-clicked
+- How to get the selected radio button’s value? (n.d.). Stack Overflow. https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value
+- How do I get Date(); to show the time in JavaScript right? (n.d.). Stack Overflow. https://stackoverflow.com/questions/46754181/how-do-i-get-date-to-show-the-time-in-javascript-right
+- How to make “fit-content” work across browsers? (n.d.). Stack Overflow. https://stackoverflow.com/questions/54740433/how-to-make-fit-content-work-across-browsers
+- Rotate Parent but not child on hover. (n.d.). Stack Overflow. https://stackoverflow.com/questions/48651589/rotate-parent-but-not-child-on-hover
+- EJS - pass data to partial view and use it in every view/page. How can i do that? (n.d.). Stack Overflow. https://stackoverflow.com/questions/60551806/ejs-pass-data-to-partial-view-and-use-it-in-every-view-page-how-can-i-do-that
+- iterating over JSON object in ejs partial. (n.d.). Stack Overflow. https://stackoverflow.com/questions/37279927/iterating-over-json-object-in-ejs-partial
+- Fading out text on overflow with css if the text is bigger than allowed. (n.d.). Stack Overflow. https://stackoverflow.com/questions/22808040/fading-out-text-on-overflow-with-css-if-the-text-is-bigger-than-allowed
+- ::-webkit-scrollbar - CSS: Cascading Style Sheets | MDN. (2023, April 1). https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
+- Advanced Form Control Styling With Selectmenu And Anchoring API — Smashing Magazine. (2023, June 1). Smashing Magazine. https://www.smashingmagazine.com/2023/06/advanced-form-control-styling-selectmenu-anchoring-api/
+- Lazy loading - Web performance | MDN. (2023, March 30). https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading
+- Brosset, P. (2022, October 25). The selectmenu HTML Tag | CSS-Tricks. CSS-Tricks. https://css-tricks.com/the-selectmenu-element/
+- Fetch data | Supabase. (n.d.). https://supabase.com/docs/reference/javascript/crawlers/select
+- Isheanesu. (2022). How To SELECT, COUNT and JOIN Supabase Data. DEV Community. https://dev.to/thisisisheanesu/how-to-select-count-and-join-supabase-data-3ihk
+- House, C. (2023). A Complete Guide to CSS Grid | CSS-Tricks. CSS-Tricks. https://css-tricks.com/snippets/css/complete-guide-grid/
+- Onyejiaku, T. K. (2023). What is req.query in Express.js? Educative: Interactive Courses for Software Developers. https://www.educative.io/answers/what-is-reqquery-in-expressjs
+- Hallo IJburg - houdt je verbonden. (n.d.). halloijburg.nl. https://halloijburg.nl/
+- Hallo Strandeiland. (n.d.). hallostrandeiland.nl. https://hallostrandeiland.nl/
+- Supabase Javascript Client - Using filters. (n.d.). https://supabase.com/docs/reference/javascript/using-filters
+- How To Create Vertical Tabs. (n.d.). https://www.w3schools.com/howto/howto_js_vertical_tabs.asp
+- how to use font awesome icons in HTML. (n.d.). Stack Overflow. https://stackoverflow.com/questions/71146319/how-to-use-font-awesome-icons-in-html
+- CSS scroll snap - CSS: Cascading Style Sheets | MDN. (2023, May 29). https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll_snap
+- Kohler, M. (2020, June 18). Practical CSS Scroll Snapping | CSS-Tricks. CSS-Tricks. https://css-tricks.com/practical-css-scroll-snapping/
+- Using Each Loop in EJS Template and Express JS. (2021, July 8). The freeCodeCamp Forum. https://forum.freecodecamp.org/t/using-each-loop-in-ejs-template-and-express-js/468398/2
+
+
