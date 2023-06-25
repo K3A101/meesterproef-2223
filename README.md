@@ -16,10 +16,10 @@
   - [Requirements lijst en brainstorm sessie](#requirements-lijst-en-brainstorm-sessie)
   - [Visuele analyse](#visuele-analyse)
   - [Schetsen overzichtpagina's](#schetsen-overzichtpaginas)
-  - [Overzichtpagina eerste versie op Figma](#overzichtpagina-eerste-versie-op-figma)
+  - [Iteratie 1 - Overzichtpagina eerste versie op Figma](#iteratie-1---overzichtpagina-eerste-versie-op-figma)
     - [Versie 1:](#versie-1)
     - [Versie 2:](#versie-2)
-  - [Overzichtpagina op code](#overzichtpagina-op-code)
+  - [Iteratie 2: Overzichtpagina op code](#iteratie-2-overzichtpagina-op-code)
     - [Versie 1:](#versie-1-1)
     - [Versie 2:](#versie-2-1)
 - [Feedback week 1](#feedback-week-1)
@@ -31,7 +31,7 @@
   - [Week 2: Filter functionaliteit, Code review en feedback](#week-2-filter-functionaliteit-code-review-en-feedback)
     - [Wat ik heb gedaan deze week](#wat-ik-heb-gedaan-deze-week)
   - [Filter schetsen variaties](#filter-schetsen-variaties)
-    - [Themas](#themas)
+  - [Themas](#themas)
   - [Filter design op Figma](#filter-design-op-figma)
   - [Filter component op code](#filter-component-op-code)
   - [Code Opsplitsen in modules](#code-opsplitsen-in-modules)
@@ -51,14 +51,37 @@
     - [Geel en Zwart](#geel-en-zwart)
     - [Pastel geel en zwart](#pastel-geel-en-zwart)
       - [Responsive](#responsive)
-    - [Code review - 14 Juni 2023](#code-review---14-juni-2023)
+    - [Code review - 14 Juni 2023 met Joost](#code-review---14-juni-2023-met-joost)
     - [Opdrachtgever feedback - 15 Juni 2023](#opdrachtgever-feedback---15-juni-2023)
-    - [Design review - 15 Juni 2023](#design-review---15-juni-2023)
+    - [Design review - 15 Juni 2023 met Sanne](#design-review---15-juni-2023-met-sanne)
   - [Nieuwe kleurpallette](#nieuwe-kleurpallette)
-  - [Nieuwe overzichtpagina Design op Figma](#nieuwe-overzichtpagina-design-op-figma)
+  - [Iteratie 3 - Nieuwe overzichtpagina Design op Figma](#iteratie-3---nieuwe-overzichtpagina-design-op-figma)
     - [Nieuwe thumbnails design](#nieuwe-thumbnails-design)
     - [Wat ga ik voor volgende week doen?](#wat-ga-ik-voor-volgende-week-doen)
+  - [Reflectie van week 3](#reflectie-van-week-3)
 - [Week 4:](#week-4)
+    - [Wat heb ik deze week gedaan?](#wat-heb-ik-deze-week-gedaan)
+  - [Iteratie 4 - Nieuwe herontwerp voor de overzichtpagina](#iteratie-4---nieuwe-herontwerp-voor-de-overzichtpagina)
+  - [Thumbnails](#thumbnails)
+  - [Ronde hoeken](#ronde-hoeken)
+  - [Thumbnail hover state](#thumbnail-hover-state)
+  - [Data ophalen vanuit de database en eromheen stijlen](#data-ophalen-vanuit-de-database-en-eromheen-stijlen)
+  - [Thema per wens](#thema-per-wens)
+  - [Aantal resultaten zien](#aantal-resultaten-zien)
+  - [Laast gemaakte wensen met de data daarbij](#laast-gemaakte-wensen-met-de-data-daarbij)
+  - [Slogan](#slogan)
+    - [Responsiveness](#responsiveness)
+  - [Microinteracties](#microinteracties)
+  - [Filter met selectmenu](#filter-met-selectmenu)
+    - [Kleine styling fixen bij de user pagina](#kleine-styling-fixen-bij-de-user-pagina)
+    - [Code review - 21 Juni 2023 met Joost](#code-review---21-juni-2023-met-joost)
+    - [Design review - 22 Juni 2023 met Vasilis](#design-review---22-juni-2023-met-vasilis)
+    - [Opdrachtgever feedback - 23 Juni 2023](#opdrachtgever-feedback---23-juni-2023)
+    - [Kleine css fix](#kleine-css-fix)
+    - [Visualistatie van de thema's](#visualistatie-van-de-themas)
+    - [Gesorteerde thema's](#gesorteerde-themas)
+    - [Call to action](#call-to-action)
+  - [Wishlist](#wishlist)
 ---
 
 ## Week 1: Debriefing en de eerste iteratie
@@ -131,7 +154,7 @@ Voor deze week zijn we begonnen met de idee generatie van het concept. Ik heb al
 ![Schets van de overzichtpagina](images/overviewpage_sketc_page_1.jpg)
 
 
-## Overzichtpagina eerste versie op Figma
+## Iteratie 1 - Overzichtpagina eerste versie op Figma
 Daarna ben ik meteen begonnen  met de eerste uitwerking van de overzichtpagina op prototype
 
 ### Versie 1:
@@ -144,7 +167,7 @@ In de tweede figma versie, heb ik andere layou stijl gemaakt. Bovenaan heb je ee
 
 ![Figma versie 2](images/overzichtpagina-figma-2.png)
 
-## Overzichtpagina op code
+## Iteratie 2: Overzichtpagina op code
 Na het ontwerpen op Figma, ben aan de slag gegaan met de code. Ik heb mijn eerste versie op een aparte branch gemaakt. Hieronder kun je de verschillende iteraties zien die ik heb gemaakt op de overzichtpagina. 
 
 ### Versie 1:
@@ -230,7 +253,7 @@ Ten eerste heb ik opgezocht naar verschillende manieren waar het filter componen
 
 ![schetsen variaties van filteren](images/filters-schetsen.jpg)
 
-### Themas
+## Themas
 Voordat ik het filter functionaliteit kon implementeren in het prototype hebben we de thema's samen vastgesteld. Hironder kunnen jullie de thema's terugzien.
 
 ![Themas](images/themas.png)
@@ -598,14 +621,14 @@ Hier heb ik de pastel gele kleur van de kleurpallette met de zwarte kleur getest
 
 #### Responsive 
 
-### Code review - 14 Juni 2023
+### Code review - 14 Juni 2023 met Joost
 - De code is goed gestructureerd en overzichtelijk.
 - De app.js beter gaan opschonen en splitsen in meerdere bestanden
 
 
 ### Opdrachtgever feedback - 15 Juni 2023
 Een paar feedback punten vanuit de opdrachtgever zijn:
-- Op de overzichtspagina de volgorde van sorteren en filtreren aanpassen 
+- Het sorteren functie moet  onderscheid worden van de filter functie. 
 - Online weergaven op het bericht, is het iedereen die online is op de community pagina of zijn alleen gebruikers die op dit moment op de pagina bevinden. 
 - Groene cirkel (wanneer de gebruiker online is) is niet duidelijk genoeg
 - Een paar feedback punten die we van de docenten hebben gekregen
@@ -615,7 +638,7 @@ Bij het formulier pagina moet er op hierachie gelet worden welke componenten hor
 - Een pakkende afbeelding voor de banner op de overzichtspagina veranderen 
 
 
-### Design review - 15 Juni 2023
+### Design review - 15 Juni 2023 met Sanne 
 - Een pakkende banner afbeelding die meer context geeft.
 - Meer spelen met het layout van de overzichtpagina's
 - Meer kleur tintne toevoegen aan de kleurpalette
@@ -625,7 +648,8 @@ Bij het formulier pagina moet er op hierachie gelet worden welke componenten hor
 Na de design review hebben we veel opmerkingen gekregen dat website heel saai is en lijkt als een standaard nieuwswebsite. We hebben daardoor als tip gekregen om de kleurpalette uit breiden met meer kleurtinten zoals we meer ruimte krijgen om de te spelen met de kleuren.  
 ![Kleurpallette](images/nieuwe-kleurpalette.png)
 
-## Nieuwe overzichtpagina Design op Figma
+
+## Iteratie 3 - Nieuwe overzichtpagina Design op Figma
 
 ![Nieuwe overzichtpagina](images/nieuwe-overzichtpagina-design.png)
 
@@ -638,11 +662,303 @@ Na de design review hebben we veel opmerkingen gekregen dat website heel saai is
 ![Nieuwe thumbnails](images/thumbnail-iteraties-2.png)
 
 
+
 ### Wat ga ik voor volgende week doen?
 - De nieuwe kleurpallette implementeren in de  wens overzichtpagina 
 - De nieuwe layout van de overzichtpagina  in code verwerken.
 - De themas toevoegen per wens
 - Data filtreren op de overzichtpagina
 - Meer microinteracties toevoegen in de wens overzichtpagina
+
+## Reflectie van week 3
+Deze week hebben we veel feedback gekregen, dat ik een gevoel krijgt dat we weer naar 0 zijn gegaan. Deze week heb ik mijn tijd besteed aan de filter en de overzichtspagina. Verder heb ik de data vanuit de database opgehaald en op de overzichtspagina geplaatst. We hebben veel feedback gekregen vanuit het design en code review. In de code review krijgen we als feedback om dynamische data toe te voegen, want het was een van ons core functionaliteiten. Bij de designview kreeg ik als feedback om de overzichtspagina wat creatieve onderdelen inzetten, want het zag er saai uit.  Na de designreview heb ik een nieuw design gemaakt voor de overzichtspagina op Figma. En aantal iteraties gemaakt en samen besproken. Voor de code review heb ik weer data  in de applicatie toegevoegd.
+
 --- 
 # Week 4:
+Deze week is de vierde week van de meesterproef. Deze week heb ik verschillende dingen qua design met css als de backend zoals data vanuit de database ophalen. Verder had ik weer een code review en design review met docenten. Ik heb de overzichtspagina opnieuw ontworpen en meteen in code verwerkt. Ik heb daarbij nog wat kleine animaties toegevoegd zodat het wat soepeler blijft en als laatste heb ik nog met nieuwe css technieken geëxperimenteerd.
+
+### Wat heb ik deze week gedaan?
+- De nieuwe kleurpallette implementeren in de  wens overzichtpagina
+- Nieuwe layout van de overzichtpagina  in code verwerken.
+- De themas toevoegen per wens
+- Dynamische data toevoegen
+- Microinteracties toevoegen in de wens overzichtpagina
+- Design review
+- Skeleton screen toevoegen
+
+
+
+## Iteratie 4 - Nieuwe herontwerp voor de overzichtpagina
+Na de design review heb ik feedback gekregen om de pagina wat aantrekkelijker te maken. Ten eerste wanneer je op de pagina komt, zie je een afbeelding en de slogan. Maar het geef geen context wat de webpagina is. Verder de wens onderdeel paste niet echt bij de rest van de pagina. Het was helemaal saai. Hieronder ga ik uitleggen hoe ik de feedback heb verwerkt. 
+
+## Thumbnails
+
+![Nieuwe thumbnails](images/overzicht-pagina-3.png)
+
+## Ronde hoeken
+Ten eerste heb ik de thumbnails ronde hoeken gegeven met` border-radius: 2em.` WIj wilde zeg maar de wens thumbnails een beetje laten lijken op een kaartje. Dus ik heb een `<article>` element met daarin de wens titel, de thema en kleine beschrijving van de wens. De article element heb ik ook een ronde hoek gegeven en met `transform translateY` heb ik de  element een beetje naar boven verplaatst zodat het op de afbeelding komt te staan.
+
+Voor de afbeelding heb ik omgeringd met een `<figure>` element met een afmeting zodat alle afbeelding dezelfde afmetingen krijgen.  
+
+```css
+.grid-container .thumbnail-container figure {
+  height: 15.625em;
+}
+
+.grid-container .thumbnail-container figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Article element */
+.grid-container .thumbnail-container article {
+  width: 100%;
+  transform: translateY(-18%);
+  transition: transform .5s ease-in-out;
+}
+
+.grid-container .thumbnail-container article:hover {
+  transform: translateY(-38%);
+}
+```
+
+## Thumbnail hover state
+![Nieuwe thumbnails](images/overzicht-pagina-3.png)
+
+Wanneer je met je muis over de thumbnail gaat, zie je dat de article element een beetje naar boven gaat. Dit heb ik gedaan met `transform: translateY(-38%);` en `transition: transform .5s ease-in-out;`.
+
+Om het paragraaf een beetje te laten vervagen heb ik een ::before psuedo selector op de paragraaf gebruikt en een transparante gradient toegevoegd. 
+
+```css
+.thumbnail-container article p {
+  position: relative;
+  height: 8em;
+  overflow: hidden;
+}
+
+.thumbnail-container article p::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(transparent 10px, white);
+}
+
+```
+
+## Data ophalen vanuit de database en eromheen stijlen
+Vorige week heb ik al de data vanuit de database opgehaald maar het was nog niet compleet. Er miste nog de thema die bij de wens hoort. Dus ik heb de thema ook toegevoegd. Dus de data dat dynamsich zij:
+Iteratie 2:
+- De titel van de wens
+- De thema van de wens
+- De beschrijving van de wens
+- De afbeelding van de wens
+- De datum die daarbij hoort.
+
+Zoals ik al eerder heb benoemd, we gebruiken de supabase database waar de wensen worden opgeslagen. De wensen worden gemaakt via de wens formulier en de data wordt dan gestuurd naar de database. 
+Ik haal de data op via de server side met expres.js. Daarna wordt de data weergegeven op de overzichtspagina.
+
+Hieronder zie je de code, hoe ik de data uit supabase ophaalt. Ten eerste maak ik twee variabele met daarin de data object en de error object. Verder gebruik ik de `.from()` methode om de tabel ye kiezen waar de data in zit. Daarna gebruik ik de `.select()` methode om de kolommen te kiezen die ik wil hebben. In dit geval wil ik de titel, thema, beschrijving en de afbeelding hebben. Omdat ik alles in de tabel wil hebben blijft die leeg. 
+
+  En als laatste stuur ik de data mee naar de template engine ejs , om data te renderen op de pagina.
+
+```js
+  const { data: suggestionsData, error: suggestionsError } = await supabase
+    .from("suggestion")
+    .select();
+
+      res.render("index", {
+      title: "Wensen",
+      themes: themeData,
+      suggestions: shuffledSuggestionsData,
+    });
+```
+
+
+## Thema per wens 
+Wanneer je een wens aanmaak kun je meerdere thema meegeven. In de vorige iteratie waren de themas hardcoded op de overzichtpagina's. Maar ik en Jevona hebben besloten om de themas dynamisch te maken. Wat ik doe is, ik haal data vanuit de thema en de wensen tabel. Daarna kijk ik of de thema id overeenkomt met de thema id van de wens. Als dat zo is dan voeg ik de thema toe aan de wens object. En de data wordt daarna weergegven op de overzichtspagina.
+```js
+ const { data: themeData, themeError } = await supabase.from("theme").select();
+  const { data: themeSuggestions, themeSuggestionsError } = await supabase
+    .from("suggestion_theme")
+    .select();
+  const { data: suggestionsData, error: suggestionsError } = await supabase
+    .from("suggestion")
+    .select();
+
+    for (const suggestion of suggestionsData) {
+    const relatedTheme = themeSuggestions.find(
+      (ts) => ts.suggestionId === suggestion.id
+    );
+    if (relatedTheme) {
+      const theme = themeData.find((t) => t.id === relatedTheme.themaId);
+      if (theme) {
+        suggestion.theme = theme;
+      }
+    }
+  }
+
+   res.render("index", {
+      title: "Wensen",
+      themes: themeData,
+      suggestions: suggestionsData,
+    });
+
+
+```
+
+##  Aantal resultaten zien
+![Nieuwe thumbnails](images/overzicht-pagina-3.png)
+
+Voor de gebruiker is het handig om te weten hoeveel wensen er zijn op de overzichtspagina. Dus ik heb een de `count` functie gebruikt waarbij elke item binnen de suggestion table array wordt geteld. 
+
+```js
+ const { count, error } = await supabase
+    .from("suggestion")
+    .select("*", { count: "exact", head: true });
+
+```
+Daarna stuur ik de `totalSuggestions` object mee naar de template engine ejs om het te renderen op de pagina.
+
+```js
+  res.render("index", {
+      title: "Wensen",
+      themes: themeData,
+      suggestions: suggestionsData,
+      totalSuggestions: count,
+    });
+
+``` 
+Het ziet er zo uit op de pagina's:
+![Nieuwe thumbnails](images/overzicht-pagina-3.png)
+
+
+## Laast gemaakte wensen met de data daarbij
+![Laatst gemaakte wens](images/laatst-gemaakte-wensen.png)
+
+In een van ons gesprek met de opdrachtgever heeft hij aangegeven dat hij wil niet de populaire wensen zien want dan blijven ze populair.En andere wensen hebben geen kans om naar voren te komen.  Dus wij dachten om in plaats daarvan de laatst gemaakte wensen te laten zien. Dan hebben nieuwe wensen ook een kans om naar voren te komen.
+Hoe zie je dat de wensen nieuw zijn? Dat zie je aan de datum. De datum wordt ook opgeslagen in de database. Dus ik haal de datum op vanuit de database en ik sorteer de wensen op datum. De laatst gemaakte wensen komen dan bovenaan te staan. 
+
+```js
+  const { data: latestSuggestionsData, latestSuggestionsError } = await supabase
+    .from("suggestion")
+    .select()
+    .order("created_at", { ascending: false })
+    .limit(3);
+```
+Ik heb een kopie gemaakt van de wensen thumbnails html en in een nieuwe bestand geplaatst. 
+Zodat ik de rest van de wensen niet verpest. Daarna in de server heb ik een nieuwe variabele gemaakt om data van de `suggestion` op te halen. Ik selecteer alles en ik sorteer de wensen op datum `.created_at` van nieuw naar oud. En ik gebruik de `.limit(3)` methode om de alleen drie laatst gemaakte wensen te laten zien. En als laatste stuur ik de data mee naar de template engine ejs om het te renderen op de pagina.
+
+```js
+  res.render("index", {
+      title: "Wensen",
+      themes: themeData,
+      suggestions: suggestionsData,
+      totalSuggestions: count,
+      latestSuggestions: latestSuggestionsData,
+    });
+
+```
+
+```html
+<!-- index.ejs -->
+ <h2>Bekijk de laatst gemaakte wensen</h2>
+      <section class="latest-ideas">
+        <% latestSuggestions.forEach(suggestion=> { %>
+          <%-include('./partials/latest-thumbnail.ejs',{suggestion: suggestion})%>
+            <% }) %>
+      </section>
+
+<!-- latest-thumbnails -->
+      <li>
+                    <%= (new Date(suggestion.created_at)).toLocaleString("nl-NL", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+     
+    })%>
+                </li>
+```
+
+
+
+## Slogan
+Deze onderdeel vindt 
+![slogan](images/slogan-onderdeel-v2.png)
+- Wens aanmaken button verplaatst
+- slogan beter uitgelijnd met de rest van de content
+
+### Responsiveness
+- Op mobiel 
+- Op tablet
+- Op desktop
+
+
+## Microinteracties
+De hover state op de skogav.
+dropdown menu 
+
+
+## Filter met selectmenu
+![Filter](/images/selectmenu.png)
+- Sorteer verplaatst
+- 
+
+### Kleine styling fixen bij de user pagina
+
+
+### Code review - 21 Juni 2023 met Joost
+- De code is goed gestructureerd en overzichtelijk.
+- Goede bestand benamingen 
+- Console.log weghalen
+- App.js opsplitsen in meerdere bestanden
+- Performance test doen 
+- Toegankelijkheid test doen
+- Taken prioriteren
+
+### Design review - 22 Juni 2023 met Vasilis
+- De wens aanmaak knop een beetje laten draaien wanneer het gehoverd is.
+- Probeer de selectmenu bij de filter.
+- Grid auto fit gebruiken voor de thumbnails
+- 
+
+### Opdrachtgever feedback - 23 Juni 2023
+We hebben nog meer feedback gekregen vanuit de opdrachtgever. Hieronder zie je de feedback die we hebben gekregen.
+- Laat zien hoe de pagina eruit ziet wannneer de wens gesorteerd is bij thema's
+- De call to action aanpassen naar iets anders zoals bijdragen naar een duurzaam sociaal en strandeiland.
+- Laat een datavisualisatie zien welke themas het meest wordt gebruikt. 
+- filter sorteren etc een stukje eronder onder de meest recente wensen plaatsen
+- meer thema’s bij overzicht pagina op 1 wens
+- max 3 thema’s in het formulier afdwingen
+- bij overzichtpagina even kijken of we de afbeelding omdraaien of hem wat hoger maken.
+- Of gewoon goed verwoorden waarom. -> titel is belangrijk
+- filter visualiseren en niet in code
+- die icoontjes op overzicht op 1 lijntje  overzichtpagina
+- visualisatie hoe je kan zien welke themas het meeste voorkomen
+- Wat niet heel erg naar voren komt is duurzaamheid en sociaal in de artikelen
+in de oproep daarboven. Helpt mee om strandeiland zo duurzaam mogelijk te maken?
+bij form u en uw veranderen naar jij en jouw
+
+
+### Kleine css fix
+- Wanneer er geen afbeelding wordt achtergrond kleur gegeven
+- De offline error bericht centreren
+- De foto's van de userpagina beter  stijlen
+
+### Visualistatie van de thema's
+
+
+### Gesorteerde thema's
+
+
+### Call to action
+
+## Wishlist
+| Prioriteit | User story | Beschrijving | Status |
+| :--- | :--- | :--- | :--- |
+| 1 |  |  |  |
