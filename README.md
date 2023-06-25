@@ -37,6 +37,7 @@
   - [Code Opsplitsen in modules](#code-opsplitsen-in-modules)
   - [Code review - 7 Juni 2023](#code-review---7-juni-2023)
   - [Opdrachtegver feedback - 9 juni 2023](#opdrachtegver-feedback---9-juni-2023)
+  - [Coding Agreements](#coding-agreements)
 - [Week 3: Nieuwe detailpagina design, chat, filter en feedback](#week-3-nieuwe-detailpagina-design-chat-filter-en-feedback)
   - [Wat heb ik gedaan:](#wat-heb-ik-gedaan)
     - [Uitegbereide filter functionaliteit](#uitegbereide-filter-functionaliteit)
@@ -99,7 +100,8 @@
   - [Wat ging er goed?](#wat-ging-er-goed)
   - [Wat ging er minder goed?](#wat-ging-er-minder-goed)
   - [Wat ben ik trots op?](#wat-ben-ik-trots-op)
-  - [Vakken](#vakken)
+- [Toepassing van de meesterproef Vakken](#toepassing-van-de-meesterproef-vakken)
+  - [Web app from scratch](#web-app-from-scratch)
   - [Wishlist](#wishlist)
 - [Bronnen](#bronnen)
 ---
@@ -383,6 +385,22 @@ Op  7 juni hebben we een individuele code review met docenten. Ik had code revie
 - Trekkers menu anders doen en niet aan de zijkant
 - De wens aanmaken buton moet een activerend call to action hebben
  
+
+## Coding Agreements
+Na een onze code review hebben we ons code overeenkomsten vastgesteld. Om de consistentie van de code te behouden.
+Onze overeenkomsten zijn:
+- Schrijf zo min mogelijk code.
+- Gebruik de juiste namen voor alles.
+- Zet je code in blokken/alinea's.
+- Gebruik inspringing om het begin en einde van besturingsstructuren te markeren.
+- Gebruik het DRY (Don't Repeat Yourself) principe. Automatiseer repetitieve taken wanneer nodig. Hetzelfde stuk code mag niet worden herhaald in het script.
+- Gebruik een hoofdletter voor speciale SQL-woorden en functienamen om ze te onderscheiden van tabel- en kolomnamen.
+- Vermijd lange rijen. Het is voor mensen gemakkelijker om regelblokken te lezen die horizontaal kort en verticaal lang zijn.
+- Alles comments en id's classes (benoemingen) in het Engels.
+- Gebruik van camelCase.
+- Structuur javaScript is eerst variabelen, daarna logica, daarna functies.
+- Alleen gebruik van const en lets
+- Javascript, css en html in modules opdelen.
 
 ---
 # Week 3: Nieuwe detailpagina design, chat, filter en feedback
@@ -1181,7 +1199,7 @@ bij form u en uw veranderen naar jij en jouw
 - Wanneer er geen afbeelding wordt achtergrond kleur gegeven
 - De offline error bericht centreren
 - De foto's van de userpagina beter  stijlen
-
+- 
 ---
 
 # Week 5: De laaste loodjes 
@@ -1208,6 +1226,8 @@ Het meest belangrijk dat ik heb geleerd was hoe ik aan een frontend project werk
 
 Verder heb ik gewerkt met supabase om data op te halen. Hiervoor moet je kijken hoe je de data is gestructureerd met insomia en uiteindelijk in de applicatie implementeren. 
 
+Als laatste heb ik geleerd hoe je de voor opdrachtgever een concept moet bouwen op basis van zijn criteria's. Hierbij leer je aan de hand van zijn feedback hoe je het concept kan verbeteren.
+
 ## Wat ging er goed?
 Ten eerste vind ik ons samenwerking heel goe gegaan. Wij hebben elke zo goed gecommuniceerd en afspraken gemaakt. We houden ook tussen door een dagelijkse standup waar wij vertellen hoe het ging en wat hebben gedaan en hoe we verder gaan. Daarna worden de taken verdeeld  en gaan we aan de slag. Dit hele proces werd bijgehouden in ons daily scrum document. 
 
@@ -1219,9 +1239,26 @@ Wat er goed ging bij mij was dat ik ietaratief hebt gewerkt aan de overzichtspag
 ## Wat ging er minder goed?
 Wat minder goed ging voor mij was dat ik vast zit met het implenteren van een filter functionaliteit om de data van de database te filteren. Ik had de css opmaak en alles maar om het echt te laten werken was een uitdaging. Ik wist precies welke code ik moest schrijven, en ik wilde ook geen hulp en liep wekenlang vast. Toen mij dat niet lukte kreeg het gevoel dat ik veel heb nog om te leren en dat ik niet genoeg heb gedaan.Maar in het algemeen ben ik wel tevreden met wat ik heb gedaan.
 
+
+
 ## Wat ben ik trots op?
-## Vakken
-- web app from scratch
+Ik ben trots dat ik de meesterproef had overleeft en een leuke project aan de opdrachtgever geleverd. Ik ben trots op mijn team over hoe we zo goed hebben samengewerkt en hoe we elkaar hebben geholpen. Iedreen wisten hun rol en konden makkelijk onze taken vervullen. 
+
+# Toepassing van de meesterproef Vakken
+
+
+## Web app from scratch
+De eerste vak die ik heb toegepast is web app from scratch. Ik heb supabase gebruikt  data op te halen en die op te pagina te tonen. Op de wensen overzichtspagina zie je allerlei gemaakte wensen op basis van wat er wordt in de database ingevuld.  Vanuit de database haalde ik de titel, de beschrijving, de datum en de afbeelding  van de wensen op.
+
+Op basis van de content heb ik een user interface gemaakt met de bijbehorende states bijvoorbeeld de loadings state. De loading state wordt geactiveerd waneer de pagina heel langzaam laadt en de afbeeldingen heel traag worden geladen. Dan zie je een skeleton loader die de afbeeldingen vervangt.
+
+ Qua code structuur heb ik gewerkt met modules. We hebben onze server bestand opgesplits in een routes.js bestand en ons client side javascript code hadden elke functionaliteit een aparte bestand. Ook ons CSS en HTML werd in componenten gedaan.  Voor de html hebben we ejs template engine gebruikt genaamd ejs. Herhalende HTML code wordt in een partials bestand geplaatst en wordt opgeroepen in de ejs bestand. Voor de css kreeg elke pagina's eem eigen css bestand. 
+ 
+ Er is een css bestand voor de wensen overzichtspagina, een wens detailpagina, wens formulier, de chat, gebruikersdetailpagina en een globale css bestand. Ik heb voornamelijk gewerkt met de globale css bestand en de wensen overzichtspagina css bestand.
+
+ Wat ik meer kon doen was het filteren van de data met javascript. Ik heb geprobeerd om de data te filteren maar dat lukte niet. Ik heb wel een filter functionaliteit gemaakt maar dat was met ejs. Ik wilde wel proberen om de wensen te filteren op basis de thema. Maar ik ga het ooit proberen. 
+
+ 
 - ccs to the rescue
 - Browser tech
 - pwa
