@@ -22,6 +22,7 @@
   - [Iteratie 2: Overzichtpagina op code](#iteratie-2-overzichtpagina-op-code)
     - [Versie 1:](#versie-1-1)
     - [Versie 2:](#versie-2-1)
+    - [Scroll snap toegevoegd](#scroll-snap-toegevoegd)
 - [Feedback week 1](#feedback-week-1)
   - [31 mei 2023: Feedback design review](#31-mei-2023-feedback-design-review)
   - [1 juni 2023: Feedback debriefing](#1-juni-2023-feedback-debriefing)
@@ -102,6 +103,14 @@
   - [Wat ben ik trots op?](#wat-ben-ik-trots-op)
 - [Toepassing van de meesterproef Vakken](#toepassing-van-de-meesterproef-vakken)
   - [Web app from scratch](#web-app-from-scratch)
+  - [CSS to the rescue](#css-to-the-rescue)
+    - [Grid](#grid)
+    - [Scroll-snap](#scroll-snap)
+    - [Selectmenu](#selectmenu)
+    - [Css animaties](#css-animaties)
+  - [Browser technologies](#browser-technologies)
+  - [Progressive web app](#progressive-web-app)
+  - [Human centred Design](#human-centred-design)
   - [Wishlist](#wishlist)
 - [Bronnen](#bronnen)
 ---
@@ -200,7 +209,33 @@ Na het ontwerpen op Figma, ben aan de slag gegaan met de code. Ik heb mijn eerst
 ![overzichtpagina versie 2 op code](/images/slogan-onderdeel.png)
 ![overzichtpagina versie 2 op code](images/overzicht-pagina-iteratie-2.png)
 
+### Scroll snap toegevoegd
+```css
+.latest-ideas .scroll-snap {
 
+
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* width: 100vw; */
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.latest-ideas .thumbnail-container {
+    /* scroll-snap-align: start; */
+
+    flex: 0 0 485px;
+    width: 485px;
+    height: 600px;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+
+```
+<!-- Ik moet oude code zetten van deze versies -->
 
 ---
 # Feedback week 1
@@ -1258,11 +1293,46 @@ Op basis van de content heb ik een user interface gemaakt met de bijbehorende st
 
  Wat ik meer kon doen was het filteren van de data met javascript. Ik heb geprobeerd om de data te filteren maar dat lukte niet. Ik heb wel een filter functionaliteit gemaakt maar dat was met ejs. Ik wilde wel proberen om de wensen te filteren op basis de thema. Maar ik ga het ooit proberen. 
 
- 
-- ccs to the rescue
-- Browser tech
-- pwa
-- hcd
+
+## CSS to the rescue
+De manier hoe ik css to the rescue heb toegepast is met CSS te experimenteren.Ik gebruikt technieken die al ken om designs vanuit figma te verwerken in code. Maar ik heb gewerkt met nieuwe technieken zoals scroll-snap, selectmenu, grid, :has() selectors en css animaties.
+
+### Grid
+Voor dit project heb ik mezelf een uitdaging gegeven om met grid te gaan werken, want ik had nog steeds een beetje moeite er mee. Dus ik heb op de wens overzichtspagina met een grid-layout gewerkt.
+
+### Scroll-snap
+In de eerdere versie van de overzichtspaginas heb ik scroll-snap gebruikt om de laaste gemaakte wensen te tonen. Het was een gedoe om de juiste afmeting te krijgen en die goed laten werken op kleine schermen. Maar ik heb de scroll snap aan de kant laten liggen. 
+
+### Selectmenu
+Ik heb ook een selectmenu gebruikt om de wensen te sorteren op basis van de thema. Dit is echt een experimentele techniek waarmee je falgs in google chrome moet aanzetten om het te laten werken. Het is wel makkelijker om dropdown menus te stijlen. En daarom heb ik het gebruikt.
+
+### Css animaties
+Ik heb geëxperimenteerd met css animaties om de microinteracties op de wensen overzichtspagina te maken. Het maakt de pagina wat levendiger. 
+
+
+## Browser technologies
+In browser technologies moeten we ervoor zorgen dat ons applicatie zo goed mogelijk werkt op allerlei apparaten. Dus de applicatie moet toegankelijkheid zijn voor iedereen. Voor mijn deel heb ik de wens overzichtspagina getest of hte werkt op allerlei apparaten. Verder heb ik een kleur contrast test gedaan om te kijken  of er genoeg kleurcontrast tussen de voor en achtergrond is. Ik heb ook de applicatie getest op verschillende apparaten zoals een laptop, een tablet en een mobiel.
+
+Ik heb ookt een beetje gewerkt aan de feature detection, bij elk functie die ik heb geschreven heb in een if() statements geplaatst. Als de functie niet bestaat dan wordt de code niet uitgevoerd.
+
+Een andere onderdeel van browser technologies is dat je progressive enhancement moet toepassen. Progressive enhancement is dat je eerst een basis functionaliteit maakt en daarna voeg je extra functionaliteiten toe. 
+De basis functionaliteit moet overal kunnen werken. De extra functionaliteiten zijn niet noodzakelijk om de applicatie te laten werken.
+
+De basis functionaliteiten van de wensen overzichtspagina is een semantische html structuur te schrijven. Door goede html te schrijven kunnen wordt het makkelijker voor mensen die screenreader gebruiken de pagina te bedienen. Een progressive enhancement  is de opmaak van de HTML document met css. De pagina wordt mooier en duidelijker voor de gebruiker.  
+
+
+## Progressive web app
+De enige ding die ik heb gedaan van progressive web app is de applicatie in server side javascript te schrijven, dus server side rendering. De framework die we hebben gebruikt is express.js en EJS. Daarin heb ik de code geschreven waar ik data uit de database haal en die op de wensen overzichtpagina getoond worden. 
+
+Op de afbeelding van de wensen heb ik `loading="lazy"` toegevoegd. Dit zorgt ervoor dat de afbeeldingen pas worden geladen als de gebruiker naar beneden scrollt. Dit zorgt ervoor dat de pagina sneller laadt. Om de performance te verbeteren. 
+
+
+## Human centred Design
+Voor human centred design was de bedoeling dat je prototypes maken op basis van de gebruikersdoelen en met de testpersoon laten testen. Dut heb ik zeker gedaan de laatste vijf weken. Elk week gaan ik en mijn teamleden naar de opdrachtgever toe met een versie van het prototype. Iedereen laat zien wat ze hebben gemaakt en de opdrachtgever geeft feedback. De feeback wordt genoteerd en de volgende week wordt er weer een nieuwe versie gemaakt.
+Ik heb daardoor verschillende iteraties gemaakt voor de overzichtspagina. 
+
+
+
 
 ## Wishlist
 | Prioriteit | User story | Beschrijving | Status |
