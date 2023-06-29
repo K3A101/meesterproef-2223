@@ -104,6 +104,8 @@
   - [Dynamische data op iconen voor de trekkers, helpers en delers](#dynamische-data-op-iconen-voor-de-trekkers-helpers-en-delers)
   - [Visualisatie van de thema's](#visualisatie-van-de-themas)
     - [Gefilteerde thema's](#gefilteerde-themas)
+  - [Wireflow van de hele website](#wireflow-van-de-hele-website)
+  - [](#)
 - [Reflectie](#reflectie-1)
   - [Wat heb ik geleerd?](#wat-heb-ik-geleerd)
   - [Wat ging er goed?](#wat-ging-er-goed)
@@ -951,7 +953,7 @@ Na de design review heb ik feedback gekregen om de pagina wat aantrekkelijker te
 ## Slogan
 ### Versie 1 - van de slogan 
 ![Figma versie 1](images/overzichtpagina-figma-1.png)
-De bovenste onderdeel bestaat een hero afbeelding  en een slogan. De bedoeling was om de gebruiker context te geven op  wat de webpagina is.Dus mensen moet kunnen weten dat hier kan je wensen van anderen bekijken en kan je zelf een wens voor Strandeiland posten.  In de eerste versie was het niet helemaal duidelijk wat de doel van de pagina was. Daarom heb ik een tweede versie gemaakt.
+Helemaal bovenaan van de pagina heb je een banner met daarin een slogan en een button die de gebruiker verwijst naar het formulier waar je een wens kan indienen. De bedoeling van dit banner was om de gebruikers een beeld kan geven dat ze op deze pagina de wensen voor Strandeiland kunnen bekijken.  In de eerste versie was het niet helemaal duidelijk wat de doel van de pagina was. Daarom heb ik een tweede versie gemaakt.
 
 ### Versie 2 - van de slogan
 ![slogan](images/slogan-onderdeel-v2.png)
@@ -1603,7 +1605,7 @@ Die tweede versie heb ik uiteindelijk gekozen omdat het meer ruimte heeft en het
 ## Meerdere thema's per wens weergeven
 Een andere feedback van de opdrachtegever was dat je nog steeds niet alle thema's per wens kan zien. Op de huidige prototype staat alleen een thema per wens. Met de help van Jevona kon ik meerdere thema's toevoegen. Dus in de nieuwe versie van het prototype is er bij  elke wensen ook hun bijbehorende thema's zien. Voor de formulier heeft Laiba een limiet aangegeven. Als je een wens gaat maken kan je maximaal drie thema's kiezen. De gemaakte wensen komen op de overzichtspagina te staan.
 
-![wens met meerdere thema's](images/wens-met-meerdere-thema's.png)
+![wens met meerdere thema's](images/wens-met-meerdere-themas.png)
 
 Hieronder zie je de code die ik heb geschreven om de thema's te laten zien. 
 
@@ -1787,7 +1789,7 @@ export { addRandomHelperValue, addRandomVoters, addRandomAmbassadors }
 Een andere feedback van de opdrachtegever was dat hij wil zien welke thema's het meest wordt gebruikt. Ik heb hiervoor een visualisatie gemaakt  waarbij je kan zien welke thema's het meest voorkomen. De visualisatie heb ik in Figma gemaakt. Elk thema's hebben een witte achtergrond en een zwarte tekst. De aantal wordt bepaald door de grootte van de vakje. Hoe groter de vakje hoe meer wensen er zijn met dat thema.
 
 
- ![gesorteerde thema's](/images/meest-geklikte-thema's.png)
+ ![gesorteerde thema's](images/meest-geklikte-themas.png)
 
 ### Gefilteerde thema's
 De enige ding dat mij nog niet was gelukt is de wensen filteren op basis van thema's. Ik was wekenlang bezig om de filterfunctie aan de praat te krijgen. Ik heb het aangegeven bij de opdrachtgever en hij zei dat ik een design kan maken om te laten zien hoe de filter functie zou moeten werken. Dus ik heb in onze figma bestand een ontwerp gemaakt om te laten zien hoe de filter functie zou moeten werken.
@@ -1796,6 +1798,10 @@ In de ontwerp hieronder heb je een situatie waar de gebruiker twee thema's had g
 
 ![gesorteerde thema's](/images/filter-wensen.png)
 
+## Wireflow van de hele website
+Als laatste heb ik een wireflow gemaakt voor de hele website. De reden waarom ik het heb gemaakt is om een beeld te krijgen hoe de website werkt. 
+
+![wireflow](images/wireflow.png)
 --- 
 # Reflectie
 Ten slotte is er een einde gekomen van de meesterproef. Het was vijf leerzame weken waar we de vakken van de Minor kunnen toepassen op de eindopdracht. Ik heb uiteindelijk veel geleerd maar ik denk nog steeds dat ik meer kon doen. 
