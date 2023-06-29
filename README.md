@@ -83,7 +83,7 @@
   - [Microinteracties](#microinteracties)
     - [Hover state animaties](#hover-state-animaties)
     - [Wens aan maken button](#wens-aan-maken-button)
-    - [Wens aan maken button](#wens-aan-maken-button-1)
+    - [Thumbnails animatie](#thumbnails-animatie)
   - [Filter met selectmenu](#filter-met-selectmenu)
     - [Hoe heb ik de selectmenu gebruikt?](#hoe-heb-ik-de-selectmenu-gebruikt)
   - [Loading met CSS](#loading-met-css)
@@ -116,10 +116,10 @@
     - [Scroll-snap](#scroll-snap)
     - [Selectmenu](#selectmenu)
     - [Css animaties](#css-animaties)
+    - [Meerdere contexten](#meerdere-contexten)
   - [Browser technologies](#browser-technologies)
   - [Progressive web app](#progressive-web-app)
   - [Human centred Design](#human-centred-design)
-  - [Wishlist](#wishlist)
 - [Bronnen](#bronnen)
 ---
 
@@ -1058,7 +1058,7 @@ Ik haal de data op via de server side met expres.js. Daarna wordt de data weerge
 
 Hieronder zie je de code, hoe ik de data uit supabase ophaalt. Ten eerste maak ik twee variabele met daarin de data object en de error object. Verder gebruik ik de `.from()` methode om de tabel te kiezen waar de data in zit. Daarna gebruik ik de `.select()` methode om de kolommen te kiezen die ik wil hebben. In dit geval wil ik de titel, thema, beschrijving en de afbeelding hebben. Omdat ik alles in de tabel wil hebben blijft die leeg. 
 
-  En als laatste stuur ik de data mee naar de template engine ejs , om data te renderen op de pagina.
+  En als laatste stuur ik de data mee naar de template engine EJS , om data te renderen op de pagina.
 
 ```js
 // De wensen data vanuit database ophalen
@@ -1293,7 +1293,7 @@ Hier is een voorbeeld  van de microinteraties die je krijgt wannneer je op de kn
 
 ```
 
-### Wens aan maken button
+### Thumbnails animatie
 De volgende microinteractie is wanneer je de muis zweeft op de wens thumbnails. De tekst onderdeel gaat een beetje omhoog.
 
 ![thumbnail microinteratie](images/thumbnail-hover.png)
@@ -1386,6 +1386,7 @@ Maar ik heb de selectmenu weggehaald, want tijdens de gaat andere mensen het pro
 
 ## Loading met CSS
 Ik was bezig met de overzichtpagina, en plotseling kwam een zonder afbeeldingen en de hele layout was verplaatst. Dus ik dacht om de afbeelding container een vaste hoogte en een achtergrond kleuren te geven. Dus wanneer de foto heel traag laad dan zie je een achtergrond kleur. Het werd dan onze loading state. 
+![skeleton screen](images/skeleton-screen.png)
 
 Ik heb verschillende kleuren geprobeerd, maar we kozen om de gele te gebruiken. 
 ![error state 1](images/error-state-blue-background.png)
@@ -1797,94 +1798,153 @@ In de ontwerp hieronder heb je een situatie waar de gebruiker twee thema's had g
 
 --- 
 # Reflectie
-Ten slotte is er een einde gekomen van de meesterproef. Het was vijf leerzame weken waar we de vakken kunnen toepassen op de eindopdracht. Ik heb uiteindelijk veel geleerd maar ik denk nog steeds dat ik meer kon doen. 
+Ten slotte is er een einde gekomen van de meesterproef. Het was vijf leerzame weken waar we de vakken van de Minor kunnen toepassen op de eindopdracht. Ik heb uiteindelijk veel geleerd maar ik denk nog steeds dat ik meer kon doen. 
 
-Voor verfrssing ga ik weer een korte samenvatiting over wat ik de laatste vijf weken heb gedaan. De opdracht die ik eraan heb gewerkt is Strandeiland. 
+Voor verfrssing ga ik weer een korte samenvatiting geven over wat ik de laatste vijf weken heb gedaan. Voor meesterproef had ik  aan de case duurzaam, groen en sociaal Strandeiland gewerkt.
 
-We moesten een functionaliteit maken waar toekomstige bewoners van Strandeiland een wens kunnen plaatsen. We hebben verschillende functionaliteiten gemaakt zoals een overzichtspagina met alle wensen, een detailpagina van elk wens, een manier om op de wens te reageren. Ik heb de laatste vijf weken aan de overzichtspagina gewerkt. 
+Voor de website Hallo Strandeiland, moesten we een functionaliteit maken waar toekomstige bewoners van Strandeiland een wens kunnen plaatsen voor de ontwikkeling van de nieuwe Ijburg wijk.
+
+ We hebben verschillende functionaliteiten gemaakt zoals een overzichtspagina met alle wensen, een detailpagina van elk wens, een manier om op de wens te reageren. Ik heb de laatste vijf weken volledig aan de wens overzichtspagina gewerkt. 
 
 ## Wat heb ik geleerd?
-Het meest belangrijk dat ik heb geleerd was hoe ik aan een frontend project werkt met een team. Werken met Git en version control maakt het wat lastiger, vooral met de merge conflicten. Maar door onze duidelijke communicatie en goede afspraken hebben we een goede workflow kunnen creëren. Hiermee heb ik geleerd hoe je merge conflicten kan oplossen, isssues maken en koppelen aan branches en pull requests.
+Het meest belangrijk dat ik heb geleerd was hoe ik aan een frontend project werkt met een team. Werken met Git en version control maakt het wat lastiger, vooral met de merge conflicten. Maar door onze duidelijke communicatie en goede afspraken hebben we een goede github workflow kunnen creëren. Hiermee heb ik geleerd hoe je merge conflicten kan oplossen, isssues maken en koppelen aan branches en pull requests sturen.  
 
-Verder heb ik gewerkt met supabase om data op te halen. Hiervoor moet je kijken hoe je de data is gestructureerd met insomia en uiteindelijk in de applicatie implementeren. 
+Bovendien heb ik geleerd hoe je met een database moet omgaan en in een project koppelen. Meestal gebruikte ik een externe API, om data op te halen. Wij gebruikte Supabase en het was een extra stap  om de data op te halen. Dus op basis van de documentatie van Supabase en de Datamodel van Jevona moest ik  de functie schrijven om de data op te halen. 
 
-Als laatste heb ik geleerd hoe je de voor opdrachtgever een concept moet bouwen op basis van zijn criteria's. Hierbij leer je aan de hand van zijn feedback hoe je het concept kan verbeteren.
+Als laatste heb ik geleerd hoe je de voor  een opdrachtgever een concept moet bouwen op basis van zijn criteria's. Hierbij leer je aan de hand van zijn feedback hoe je het prototype kan itereren.
 
 ## Wat ging er goed?
-Ten eerste vind ik ons samenwerking heel goe gegaan. Wij hebben elke zo goed gecommuniceerd en afspraken gemaakt. We houden ook tussen door een dagelijkse standup waar wij vertellen hoe het ging en wat hebben gedaan en hoe we verder gaan. Daarna worden de taken verdeeld  en gaan we aan de slag. Dit hele proces werd bijgehouden in ons daily scrum document. 
+Wat  goed ging was de samenwerking binnen de groep. Wij hadden goeie communicatie met elkaar en dit zorgt ervoor dat we duidelijk afspreken wie een taak gaat uitvoeren. Om de samenwerking te bevorderen hadden we een dagelijkse standup waar wij vertellen hoe het ging en wat hebben gedaan en hoe we verder gaan. De standup hebben we gedocumenteerd in ons daily scrum.  We gebruikte github projects en issues  om de taken te verdelen en daarna aan het werk gegaan.
 
-Wij hebben goede code agreemenst vastesteld zodat we consistent code schrijven. Dit hebben we gedaan door een code review te doen. Hierbij hebben we elkaars code bekeken en feedback gegeven. Onze coding agreements zijn te vinden in de wiki van onze  groep github repository.
+Wij hebben goede code overeenkomsten vastesteld zodat we consistente code kunnen schrijven. Dit hebben we gedaan door een code review te doen. Hierbij hebben we elkaars code bekeken en feedback gegeven. [Hier](https://github.com/RainbowJM/strandeiland/wiki/Coding-standards) kun je onze code regels vinden. 
 
 
-Wat er goed ging bij mij was dat ik ietaratief hebt gewerkt aan de overzichtspagina. Je ziet duidelijk dat ik feedback heb verwerkt en een nieuwe variant hebt gemaakt. Ik ben ook blij dat ik ook een beetje kon experimenteren met css zoals animaties, de selectmenu en Grid. Ik had veel moeite met css grid maar ik heb het nu een beetje onder de knie. Ik had ook de kans om mezelf te verdiepen om code te schrijven in de server side, want ik probeerde in het begin alles te maken in de client side.
+Wat er goed ging bij mij was dat ik itaratief heb gewerkt aan de wensen overzichtspagina. Elke week hebben we feedback sessies met docenten en de opdrachtgever gehad. De feedback wordt de week daarna verwerkt. Hierdoor heb ik per week een nieuwe versies van de overzichtspagina. 
+
+ Ik ben ook blij dat ik ook een beetje kon experimenteren met css zoals animaties, de selectmenu en Grid. Ik had veel moeite met css grid gehad maar ik heb het nu een beetje onder de knie. Ik had ook de kans aan mezelf gegeven  om code te schrijven in de server side, want ik probeerde in het begin alles te maken in de client side. Maar ik was gedwingt om de code express.js te schrijven.
 
 ## Wat ging er minder goed?
-Wat minder goed ging voor mij was dat ik vast zit met het implenteren van een filter functionaliteit om de data van de database te filteren. Ik had de css opmaak en alles maar om het echt te laten werken was een uitdaging. Ik wist precies welke code ik moest schrijven, en ik wilde ook geen hulp en liep wekenlang vast. Toen mij dat niet lukte kreeg het gevoel dat ik veel heb nog om te leren en dat ik niet genoeg heb gedaan.Maar in het algemeen ben ik wel tevreden met wat ik heb gedaan.
-
-
+Wat minder goed ging voor mij was dat ik vast zit met het maken van een filter functionaliteit om de wensen te filteren bij thema's. Ik vind het wel jammer dat het niet was gelukt. Voor de rest heb ik wel het ontwerp met css gedaan, maar om echt content te filteren is nog steeds een uitdaging. Het was voor mij niet duidelijk hoe ik de code moest aanpakken. Wat ik niet heb gedaan was hulp vragen en zorgt wel dat ik wekenlang vast liep met de filter. Het was voor mij moeilijk om los te laten, want ik wilde zo graag dat de filter werkt. Dit betekent dat ik veel moet leren nog qua code. 
 
 ## Wat ben ik trots op?
-Ik ben trots dat ik de meesterproef had overleeft en een leuke project aan de opdrachtgever geleverd. Ik ben trots op mijn team over hoe we zo goed hebben samengewerkt en hoe we elkaar hebben geholpen. Iedreen wisten hun rol en konden makkelijk onze taken vervullen. 
+Ik ben trots op de project die we in de laatste vijf weken hebben gedaan. Het was een leuke project waar ik de kennis die ik tijdens deze  Minor heb opgedaan toepassen. Verder ben ik ook trots op mijn teamleden op de manier hoe we met elkaar omging. Er was goede samnewerking, duidelijke communicatie en eerlijke taakverdeling. Verder ben ik ook trots op mijn bijdrage aan mijn werkhouding, ik ben beter geworden in een groep te werken, ik laat dingen los en probeerd niet alle taken naar me toe te schuiven.  
 
 # Toepassing van de meesterproef Vakken
 
-
 ## Web app from scratch
-De eerste vak die ik heb toegepast is web app from scratch. Ik heb supabase gebruikt  data op te halen en die op te pagina te tonen. Op de wensen overzichtspagina zie je allerlei gemaakte wensen op basis van wat er wordt in de database ingevuld.  Vanuit de database haalde ik de titel, de beschrijving, de datum en de afbeelding  van de wensen op.
+De eerste vak die ik heb toegepast is web app from scratch. Ik heb supabase gebruikt om  data op te halen en die op de pagina te tonen. De content word door middel van het formulier naar de database gestuurd. En ik haal de content vanuit de database en dan op de wensen overzichtspagina weergeven. Vanuit de database de  titel, de beschrijving, de datum en de afbeelding  van de wensen op.
+> Leerdoel: 	Data management - you understand how you can work with an external API using asynchronous code. You can retrieve data, manipulate and dynamically convert it to structured html
 
-Op basis van de content heb ik een user interface gemaakt met de bijbehorende states bijvoorbeeld de loadings state. De loading state wordt geactiveerd waneer de pagina heel langzaam laadt en de afbeeldingen heel traag worden geladen. Dan zie je een skeleton loader die de afbeeldingen vervangt.
+[Hier](https://github.com/K3A101/meesterproef-2223#data-van-de-wensen-ophalen) kun je bekijken hoe ik de [data](https://github.com/K3A101/meesterproef-2223#data-van-de-wensen-ophalen) vanuit de databse ophalen,
 
- Qua code structuur heb ik gewerkt met modules. We hebben onze server bestand opgesplits in een routes.js bestand en ons client side javascript code hadden elke functionaliteit een aparte bestand. Ook ons CSS en HTML werd in componenten gedaan.  Voor de html hebben we ejs template engine gebruikt genaamd ejs. Herhalende HTML code wordt in een partials bestand geplaatst en wordt opgeroepen in de ejs bestand. Voor de css kreeg elke pagina's eem eigen css bestand. 
+Op basis van de content heb ik een user interface gemaakt met de bijbehorende states bijvoorbeeld de loadings state. De loading state is de status wanneer de client een request en wacht op de response van de server. De loading state op de wensen overzichtspagina is een skeleton screen loader voor de afbeelding. Op mijn pagina heb ik veel afbeelding en soms duurt het een beetje voordat de pagina helemaal geladen is. Dus wat je eerst ziet is een gele achtergrond kleur en dan wordt de kleur vervangen naar een afbeelding..
+
+Hier kun je de code kijken voor de [loading state](https://github.com/K3A101/meesterproef-2223#data-van-de-wensen-ophalen) op de wensen pagina.
+
+Qua code structuur hebben we CSS, HTML en JavaScript verdeeld in componenten. Voor Javascript hebben we gebruikt gemaakt van modules. Hier kan je een functie in een aparte bestand schrijven en in een andere bestand hergebruiken. Ik heb zo mijn javascript code geschreven, vooral de filter functie. Onze css bestaat uit verschillende. Elk pagina kreeg een CSS stylesheet. 
+
+Onze server side code hebben we express.js framework gebruikt. In de server bestand hebben we nog een bestand route.js gemaakt waar we onze route kunnen plaatsen. 
+En voor de HTML hebben we EJS templating engine gebruikt. Het voordeel hiervan kun je html bestanden ook in componenten schrijven. Herhalende HTML blokjes worden in een partial bestand gezet. Zo kun je ook consistente code schrijven.  
+
+Ik heb hier een [afbeelding](https://github.com/K3A101/meesterproef-2223#code-opsplitsen-in-modules) waar je kan zien hoe onze map structuur in elkaar zit. 
+
+ Hier heb ik een screenshot gemaakt vanuit mijn computer, zodat je de mappenstructuur van ons project kan zien.
+ ![refactor versie 2](images/refactor-v2.png)
+
+> Leerdoel: Code structure - you write modular, consistent and efficient HTML, CSS and JavaScript code by applying structure and best practices. You manage state for the application and the UI
  
- Er is een css bestand voor de wensen overzichtspagina, een wens detailpagina, wens formulier, de chat, gebruikersdetailpagina en een globale css bestand. Ik heb voornamelijk gewerkt met de globale css bestand en de wensen overzichtspagina css bestand.
-
  Wat ik meer kon doen was het filteren van de data met javascript. Ik heb geprobeerd om de data te filteren maar dat lukte niet. Ik heb wel een filter functionaliteit gemaakt maar dat was met ejs. Ik wilde wel proberen om de wensen te filteren op basis de thema. Maar ik ga het ooit proberen. 
 
-
+[De rubric](https://github.com/cmda-minor-web/web-app-from-scratch-2223#rubric)
 ## CSS to the rescue
-De manier hoe ik css to the rescue heb toegepast is met CSS te experimenteren.Ik gebruikt technieken die al ken om designs vanuit figma te verwerken in code. Maar ik heb gewerkt met nieuwe technieken zoals scroll-snap, selectmenu, grid, :has() selectors en css animaties.
+De manier hoe ik css to the rescue heb toegepast is met CSS te experimenteren. Ik gebruikt technieken die al ken om designs vanuit figma te verwerken in code. Maar ik heb gewerkt met nieuwe technieken zoals scroll-snap, selectmenu, grid, :has() selectors en css animaties. Verder heb ik geen css frameworks en preprocessoes zoals Sass. Alles die ik heb gedaan is met vanilla CSS.
+
+> Leerdoel: Je hebt geëxperimenteerd met voor jou nieuwe CSS-technieken.
+> Leerdoel: Je code bestaat uit vanilla CSS en HTML. Geen JS, pre-processors, libraries en frameworks en alleen ID’s en classes indien strikt noodzakelijk.
 
 ### Grid
-Voor dit project heb ik mezelf een uitdaging gegeven om met grid te gaan werken, want ik had nog steeds een beetje moeite er mee. Dus ik heb op de wens overzichtspagina met een grid-layout gewerkt.
+Voor dit project heb ik mezelf een uitdaging gegeven om met grid te gaan werken, want ik had nog steeds een beetje moeite er mee. Dus ik heb op de wens overzichtspagina met een grid-layout gewerkt. Hier is een stukje in de [productbiografie](https://github.com/K3A101/meesterproef-2223#responsive-design) van de grid layout die ik heb toegepast.
+
 
 ### Scroll-snap
-In de eerdere versie van de overzichtspaginas heb ik scroll-snap gebruikt om de laaste gemaakte wensen te tonen. Het was een gedoe om de juiste afmeting te krijgen en die goed laten werken op kleine schermen. Maar ik heb de scroll snap aan de kant laten liggen. 
+In de eerdere versie van de wensen overzichts pagina heb ik scroll-snap gebruikt om de laaste gemaakte wensen te tonen. Het was een gedoe om de juiste afmeting te krijgen en die goed te laten werken voor de apparaten met kleine schermen. Ik heb in mijn productbiografie een [screenshot](https://github.com/K3A101/meesterproef-2223#versie-2-1) gemaakt van de versie met de scroll-snap.
 
 ### Selectmenu
-Ik heb ook een selectmenu gebruikt om de wensen te sorteren op basis van de thema. Dit is echt een experimentele techniek waarmee je falgs in google chrome moet aanzetten om het te laten werken. Het is wel makkelijker om dropdown menus te stijlen. En daarom heb ik het gebruikt.
+Ik heb ook een selectmenu gebruikt om de wensen te sorteren op basis van een paar criteria's. Dit is echt een experimentele techniek waarmee je flags in google chrome moet aanzetten om het te laten werken. Het is wel makkelijker om dropdown menus te stijlen. En daarom heb ik het gebruikt. Maar voor de demo en de Expo heb ik het weggehaald. 
+
+![selectmenu](images/selectmenu.png)
 
 ### Css animaties
 Ik heb geëxperimenteerd met css animaties om de microinteracties op de wensen overzichtspagina te maken. Het maakt de pagina wat levendiger. 
+Hier zijn een paar voorbeelden van animaties die ik heb gemaakt.
+- [ Hover state van de wensen thumbnails]()
+- [Draaiende button](https://github.com/K3A101/meesterproef-2223#hover-state-animaties)
 
+
+### Meerdere contexten
+Ik gebruikte ook css om ervoor te zorgen dat het prototype pas zoch aan de verschillende context. Een voorbeeld van mij is dat ik media queries gebruikt omte bepalen hoeveel kolommen moet komen bij bepaalde scherm grootte.
+
+Verder ging ook nog testen of de wensen overzichtspagina toetsenbord vriendelijk is en het blijkt dat het zo is. Je kan verder lezen in mijn [productbiografie](https://github.com/K3A101/meesterproef-2223#responsive-design). 
+
+> Leerdoel: Meerdere contexten – media queries, media types, toegankelijkheid…
+Veel resultaat bereiken met weinig code. Zelfde resultaat bereiken met minder code.
+
+[De rubric](https://cmda-minor-web.github.io/css-to-the-rescue-2223/beoordelingsformulier.html)
 
 ## Browser technologies
-In browser technologies moeten we ervoor zorgen dat ons applicatie zo goed mogelijk werkt op allerlei apparaten. Dus de applicatie moet toegankelijkheid zijn voor iedereen. Voor mijn deel heb ik de wens overzichtspagina getest of hte werkt op allerlei apparaten. Verder heb ik een kleur contrast test gedaan om te kijken  of er genoeg kleurcontrast tussen de voor en achtergrond is. Ik heb ook de applicatie getest op verschillende apparaten zoals een laptop, een tablet en een mobiel.
+In browser technologies moeten we ervoor zorgen dat ons applicatie zo goed mogelijk werkt op allerlei apparaten en browsers. Dus de applicatie moet toegankelijkheid zijn voor iedereen. Voor mijn deel heb ik de wens overzichtspagina getest of het werkt op allerlei apparaten zoals laptop, mobiel en tablet. Verder heb ik een kleur contrast test gedaan om te kijken  of er genoeg kleurcontrast tussen de voor en achtergrond is. 
 
-Ik heb ookt een beetje gewerkt aan de feature detection, bij elk functie die ik heb geschreven heb in een if() statements geplaatst. Als de functie niet bestaat dan wordt de code niet uitgevoerd.
+Ik heb ook een beetje gewerkt aan de feature detection, bijvoorbeeld bij de filter functie die ik heb  geschreven heb ik een if() statements geplaatst. Dus wanneer de gebruiker op een pagina gaat zonder een functie, wordt de filter functie niet uitgevoerd. 
 
-Een andere onderdeel van browser technologies is dat je progressive enhancement moet toepassen. Progressive enhancement is dat je eerst een basis functionaliteit maakt en daarna voeg je extra functionaliteiten toe. 
+```js
+if (filterThemeBtn) {
+  toggleFilterMenu();
+}
+```
+>Leerdoel: student begrijpt de principe van Feature detection en hoe je dit kan toepassen, Student kan voorbeeld noemen van hoe Feature Detection werkt en wat fallback is. 
+
+Een andere onderdeel van browser technologies was dat je progressive enhancement moet toepassen. Progressive enhancement is dat je eerst een basis functionaliteit maakt en daarna voeg je extra functionaliteiten toe. 
 De basis functionaliteit moet overal kunnen werken. De extra functionaliteiten zijn niet noodzakelijk om de applicatie te laten werken.
 
-De basis functionaliteiten van de wensen overzichtspagina is een semantische html structuur te schrijven. Door goede html te schrijven kunnen wordt het makkelijker voor mensen die screenreader gebruiken de pagina te bedienen. Een progressive enhancement  is de opmaak van de HTML document met css. De pagina wordt mooier en duidelijker voor de gebruiker.  
+De functionele laag van de wensen overzichtspagina is een semantische html structuur te schrijven. Door goede html te schrijven  wordt het makkelijker voor mensen die screenreader gebruiken de pagina te bedienen. Een progressive enhancementvoor de wensen overzichtspagina is de opmaak van de HTML document met CSS. De pagina wordt mooier en duidelijker voor de gebruiker.  
 
+Bovendien heb ik een aantal test gedaan, om te kijken of de pagina zo goed mogelijk werk. Ik heb gegeken of de wensen overzichtspagina met de toetsenbord te bedienen door `tab` te drukken. Andere test hebben mijn teamleden het gedaan. 
+
+
+[Rubric](https://github.com/cmda-minor-web/browser-technologies-2223#leerdoelen)
 
 ## Progressive web app
-De enige ding die ik heb gedaan van progressive web app is de applicatie in server side javascript te schrijven, dus server side rendering. De framework die we hebben gebruikt is express.js en EJS. Daarin heb ik de code geschreven waar ik data uit de database haal en die op de wensen overzichtpagina getoond worden. 
-
-Op de afbeelding van de wensen heb ik `loading="lazy"` toegevoegd. Dit zorgt ervoor dat de afbeeldingen pas worden geladen als de gebruiker naar beneden scrollt. Dit zorgt ervoor dat de pagina sneller laadt. Om de performance te verbeteren. 
+Wat ik voor Progressive Web App is de applicatie in server side javascript te schrijven, dus server side rendering. De framework die we hebben gebruikt is express.js en EJS. Daarin heb ik de code geschreven waar ik data uit de database haal en die op de wensen overzichtpagina laten weergeven. Hier kun je een onderdeel van mijn [code](https://github.com/K3A101/meesterproef-2223#data-van-de-wensen-ophalen) van server side rendering zien.
 
 
+> 	Serverside rendering You’ve implemented serverside rendering and have articulated how it works and why you should want it.
+
+Ik had ook een lighthouse test gedaan om de performance van de wensen overzichtspagina te bekijken, omdat daar ik heb veel afbeelding. Dus wat ik heb gedaan is bij de afbeelding van de wensen het attribuut `loading="lazy"` toegevoegd. Dit zorgt ervoor dat de afbeeldingen pas worden geladen als de gebruiker naar beneden scrollt. Dit zorgt ervoor dat de pagina sneller laadt. Om de performance te verbeteren. Hier kun je de [code](https://github.com/K3A101/meesterproef-2223#lazy-loading-bij-afbeeldingen) zien van hoe ik   `loading="lazy"` heb toegevoegd. https://github.com/K3A101/meesterproef-2223#data-van-de-wensen-ophalen
+
+Ik heb ook een beetje gewerkt aan de percieved loading time. Dus ik heb met css een skeleton screen loader gemaakt, om de gebruiker een gevoel te geven dat het snel laadt. 
+
+![skeleton screen](images/skeleton-screen.png)
+
+
+> 	Critical render path You’ve enhanced the critical render path for a better runtime or percieved performance in multiple ways and have described how you managed to do this.
+
+We hebben wel een service worker in onze project, maar ik heb niet eraan gewerkt.Dat heeft Jevona gedaan. Ook is de project een Progressive Web app want je kan het installeren op je telefoon of desktop.
+
+[De rubric](https://github.com/cmda-minor-web/progressive-web-apps-2223#grading)
 ## Human centred Design
-Voor human centred design was de bedoeling dat je prototypes maken op basis van de gebruikersdoelen en met de testpersoon laten testen. Dut heb ik zeker gedaan de laatste vijf weken. Elk week gaan ik en mijn teamleden naar de opdrachtgever toe met een versie van het prototype. Iedereen laat zien wat ze hebben gemaakt en de opdrachtgever geeft feedback. De feeback wordt genoteerd en de volgende week wordt er weer een nieuwe versie gemaakt.
-Ik heb daardoor verschillende iteraties gemaakt voor de overzichtspagina. 
+Voor Human Centred Design was de bedoeling dat je prototypes maken op basis van de gebruikersdoelen en met de testpersoon laten testen. Dat heb ik zeker gedaan de laatste vijf weken. We werken met een opdrachtgever en hij stelt aan ons zijn criteria voor het project tijdens de debriefing. Elk week ga ik en mijn teamleden naar de opdrachtgever toe met een versie van het prototype. Iedereen laat zien wat ze hebben gemaakt en de opdrachtgever geeft feedback. 
+
+De feeback wordt genoteerd en de volgende week wordt er weer een nieuwe versie met de verwerkte feedback gemaakt. Wanneer ik feedback krijgt op de wensen overzichtspagina, ik ga eerst in Figma om een nieuwe versie te maken aan het prototype. Daarna maak ik meteen de iteratie met code. Daarnaast heb je ook code review en design review en de feedback wordt ook meteen verwerkt.
+Ik heb daardoor verschillende iteraties gemaakt voor de overzichtspagina. Ik heb hieronder [een link ](https://www.figma.com/file/Cgge9oYL0CnzDvwFD4tWuB/Minor-Web-en-Development-Meesterproef?type=design&node-id=11%3A1567&mode=design&t=P7ihWHrGXcvnsx29-1) naar onze figma bestand waar ik al de iteratie van de overzichtspagina hebben staan. 
 
 
+>Leerdoel:	Testresultaten - Aan de hand van de tests wordt duidelijk gemaakt hoe deze hebben bijgedragen aan het verbeteren van het ontwerp of hoe dit een volgende keer beter of anders kan.
 
+> Leerdoel: User Needs - Er is een user scenario geschreven dat aansluit bij de identiteit van de test persoon. Er is een duidelijk en volledig user scenario geschreven dat antwoord geeft op de 4 w-vragen: Who? What? How? en Why?
 
-## Wishlist
-| Prioriteit | User story | Beschrijving | Status |
-| :--------- | :--------- | :----------- | :----- |
-| 1          |            |              |        |
+Wat ik niet heb gedaan was om de prototype te testen met andere mensen. Dat hebben we een beetje gedaan met iedereen in ons groep maar niet met een echte gebruiker van de doelgroep. 
+
+[De rubric](https://github.com/cmda-minor-web/human-centered-design-2122#rubric)
 
 
 ---
