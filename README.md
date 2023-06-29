@@ -105,7 +105,6 @@
   - [Visualisatie van de thema's](#visualisatie-van-de-themas)
     - [Gefilteerde thema's](#gefilteerde-themas)
   - [Wireflow van de hele website](#wireflow-van-de-hele-website)
-  - [](#)
 - [Reflectie](#reflectie-1)
   - [Wat heb ik geleerd?](#wat-heb-ik-geleerd)
   - [Wat ging er goed?](#wat-ging-er-goed)
@@ -1799,9 +1798,9 @@ In de ontwerp hieronder heb je een situatie waar de gebruiker twee thema's had g
 ![gesorteerde thema's](/images/filter-wensen.png)
 
 ## Wireflow van de hele website
+![wireflow](images/wireflow.png)
 Als laatste heb ik een wireflow gemaakt voor de hele website. De reden waarom ik het heb gemaakt is om een beeld te krijgen hoe de website werkt. 
 
-![wireflow](images/wireflow.png)
 --- 
 # Reflectie
 Ten slotte is er een einde gekomen van de meesterproef. Het was vijf leerzame weken waar we de vakken van de Minor kunnen toepassen op de eindopdracht. Ik heb uiteindelijk veel geleerd maar ik denk nog steeds dat ik meer kon doen. 
